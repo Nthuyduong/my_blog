@@ -1,12 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import {
+    Route,
+    HashRouter as Router,
+    Switch,
+} from "react-router-dom";
+import {ROUTER} from "./utils/constants";
 
-function App() {
+import test from "./pages/test";
+
+const App = () => {
   return (
     <Router>
       <Switch>
         <Layout>
-          {/*Khai bao router*/}
+          <Router path={ROUTER.TEST} component={Test}/>
         </Layout>
       </Switch>
     </Router>
