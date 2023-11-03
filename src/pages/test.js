@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
 const Test = () => {
     return(
-        <div></div>
+        <div>This is test page for practise tailwind</div>
     )
 }
 
