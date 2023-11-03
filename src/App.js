@@ -1,20 +1,20 @@
-import './App.css';
 import React from "react";
 import {
     Route,
     HashRouter as Router,
     Switch,
 } from "react-router-dom";
+import './App.css';
 import {ROUTER} from "./utils/constants";
-
-import test from "./pages/test";
+import Test from "./pages/test";
+import Layout from "./components/layout";
 
 const App = () => {
   return (
     <Router>
       <Switch>
         <Layout>
-          <Router path={ROUTER.TEST} component={Test}/>
+          <Route path={ROUTER.TEST} component={Test}/>
         </Layout>
       </Switch>
     </Router>
