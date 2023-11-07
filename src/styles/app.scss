@@ -8,21 +8,71 @@
 @import "tailwind";
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
-$primary_color: #F0F0EA;
-$secondary_color: #808285;
-$subcolor: #E4E4E4;
-$heading_1: 60px;
-$heading_2: 46px;
-$heading_3: 38px;
-$heading_4: 32px;
-$heading_5: 28px;
-$heading_6: 24px;
+$primary_color: #232D3E;
+$secondary_color: #DFE3EA;
+$subcolor: #131416;
+$heading_1: 42px;
+$heading_2: 38px;
+$heading_3: 32px;
+$heading_4: 24px;
+$heading_5: 20px;
 $medium_text: 16px;
 $body_text: 14px;
 $small_text: 12px;
 
+.heading_1 {
+  font-size: $heading_1;
+  line-height: $heading_1*1.25;
+  font-weight: 500;
+}
+.heading_2 {
+  font-size: $heading_2;
+  line-height: $heading_2*1.25;
+  font-weight: 500;
+}
+.heading_3 {
+  font-size: $heading_3;
+  line-height: $heading_3*1.25;
+  font-weight: 500;
+}
+.heading_4 {
+  font-size: $heading_4;
+  line-height: $heading_4*1.25;
+  font-weight: 500;
+}
+.heading_5 {
+  font-size: $heading_5;
+  line-height: $heading_5*1.25;
+  font-weight: 500;
+}
+.heading_6 {
+  font-size: $medium_text;
+  line-height: $medium_text*1.25;
+  font-weight: 500;
+}
+.body_text {
+  font-size: $body_text;
+  line-height: $body_text*1.5;
+}
+.medium_text {
+  font-size: $medium_text;
+  line-height: $medium_text*1.5;
+}
+.small_text {
+  font-size: $small_text;
+  line-height: $small_text*1.5;
+}
+
 .body{
   font-family: 'Karla', sans-serif;
+}
+.container-fluid{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.p-60{
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 #blog-nav{
   margin-bottom: 60px;

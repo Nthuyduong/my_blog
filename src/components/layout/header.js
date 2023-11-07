@@ -7,7 +7,7 @@ import { useLocation } from 'react-router-dom';
 const Header = () => {
     return(
         <nav className="nav_blog" id="blog-nav">
-            <div className="nav-blog-inner px-2 sm:px-6 lg:px-0">
+            <div className="nav-blog-inner px-0 sm:px-0 lg:px-0">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         {/*mobile menu button*/}
@@ -32,7 +32,7 @@ const Header = () => {
                         </button>
                     </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                        <div className="hidden sm:ml-6 md:ml-0 sm:block">
+                        <div className="hidden sm:ml-0 md:ml-0 sm:block">
                             <div className="flex space-x-4">
                                 {/*Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"*/}
                                 <div className="bg-gray-900 rounded-md pr-4 py-2 text-sm font-medium">
