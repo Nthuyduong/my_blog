@@ -1,8 +1,54 @@
-@import "test";
-@import "tailwind";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-body{
+@import "home";
+@import "gallery";
+@import "about";
+@import "article";
+@import "destination";
+@import "subdestiantion";
 
+@import "tailwind";
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+$primary_color: #F0F0EA;
+$secondary_color: #808285;
+$subcolor: #E4E4E4;
+$heading_1: 60px;
+$heading_2: 46px;
+$heading_3: 38px;
+$heading_4: 32px;
+$heading_5: 28px;
+$heading_6: 24px;
+$medium_text: 16px;
+$body_text: 14px;
+$small_text: 12px;
+
+.body{
+  font-family: 'Karla', sans-serif;
+}
+#blog-nav{
+  margin-bottom: 60px;
+}
+.nav_blog{
+  padding-left: 80px;
+  padding-right: 80px;
+  .nav-blog-inner{
+    border-bottom: 1px solid #DFE3EA;
+  }
+  .destination-navdrop{
+    .navdrop-inner{
+      display: none;
+    }
+  }
+  .destination-navdrop:hover .navdrop-inner{
+    display: block;
+  }
+}
+#blog-footer{
+  margin-top: 60px;
+}
+.blog-footer{
+  padding: 0 80px;
+  .blog-footer-inner{
+    padding: 40px 0;
+    border-top: 1px solid #DFE3EA;
+  }
 }
