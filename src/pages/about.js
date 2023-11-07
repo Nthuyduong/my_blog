@@ -7,7 +7,7 @@ const About = () => {
             <div className="about-intro">
                 <div className="grid grid-cols-4 gap-4">
                     <div className=""></div>
-                    <div className="col-span-2">
+                    <div className="col-span-2 intro-content heading_5 text-center">
                         “Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
                         vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor.
                         Blandit consequat quisque.”
@@ -77,10 +77,36 @@ const About = () => {
                 </div>
             </div>
             <div className="about-blog">
+                <div className="grid grid-cols-12">
+                    <div className="col-span-6">
+                        <div className="heading_3 mb-2">About blog</div>
+                        <div>
+                            Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat
+                            quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut
+                            sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Diam nec ut
+                            sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
+                        </div>
+                    </div>
+                    <div className="col-span-6">
 
+                    </div>
+                </div>
             </div>
             <div className="blog-mission">
+                <div className="grid grid-cols-12">
+                    <div className="col-span-6">
 
+                    </div>
+                    <div className="col-span-6">
+                        <div className="heading_3 mb-2">About blog</div>
+                        <div>
+                            Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat
+                            quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut
+                            sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Diam nec ut
+                            sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="contact-me">
 
