@@ -87,18 +87,18 @@ const About = () => {
                             sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
                         </div>
                     </div>
-                    <div className="col-span-6">
-
+                    <div className="col-span-6 pl-5 img-abt-blog">
+                        <img className="w-100" src="./img/about/abt-blog.jpg" alt="smile" loading="lazy"/>
                     </div>
                 </div>
             </div>
             <div className="blog-mission">
                 <div className="grid grid-cols-12">
-                    <div className="col-span-6">
-
+                    <div className="col-span-6 pr-5 img-mission">
+                        <img className="w-100" src="./img/about/mission.jpg" alt="smile" loading="lazy"/>
                     </div>
                     <div className="col-span-6">
-                        <div className="heading_3 mb-2">About blog</div>
+                        <div className="heading_3 mb-2">My mission</div>
                         <div>
                             Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat
                             quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut
