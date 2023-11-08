@@ -68,18 +68,71 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="category-destination">
+                    <div className="heading_3 mb-5 text-center">Popular Destinations</div>
                     <div className="grid grid-cols-4 gap-4">
-                        <div className="col-span-4 md:col-span-2">
+                        <div className="col-span-4 md:col-span-2 relative">
                             <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute text-white category-des-content">
+                                <div className="heading_4 text-center">Drink & Coffee</div>
+                                <div className="flex justify-center mt-2">
+                                    <div className="flex article-count pr-3">
+                                        <div className="pr-1">icon</div>
+                                        <div>10 Blogs Article</div>
+                                    </div>
+                                    <div className="flex location-count pl-3">
+                                        <div className="pr-1">icon</div>
+                                        <div>20 Location</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-span-4 md:col-span-2">
+                        <div className="col-span-4 md:col-span-2 relative">
                             <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute text-white category-des-content">
+                                <div className="heading_4 text-center">Drink & Coffee</div>
+                                <div className="flex justify-center mt-2">
+                                    <div className="flex article-count pr-3">
+                                        <div className="pr-1">icon</div>
+                                        <div>10 Blogs Article</div>
+                                    </div>
+                                    <div className="flex location-count pl-3">
+                                        <div className="pr-1">icon</div>
+                                        <div>20 Location</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-span-4 md:col-span-2">
+                        <div className="col-span-4 md:col-span-2 relative">
                             <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute text-white category-des-content">
+                                <div className="heading_4 text-center">Drink & Coffee</div>
+                                <div className="flex justify-center mt-2">
+                                    <div className="flex article-count pr-3">
+                                        <div className="pr-1">icon</div>
+                                        <div>10 Blogs Article</div>
+                                    </div>
+                                    <div className="flex location-count pl-3">
+                                        <div className="pr-1">icon</div>
+                                        <div>20 Location</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="col-span-4 md:col-span-2">
+                        <div className="col-span-4 md:col-span-2 relative">
                             <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute text-white category-des-content">
+                                <div className="heading_4 text-center">Drink & Coffee</div>
+                                <div className="flex justify-center mt-2">
+                                    <div className="flex article-count pr-3">
+                                        <div className="pr-1">icon</div>
+                                        <div>10 Blogs Article</div>
+                                    </div>
+                                    <div className="flex location-count pl-3">
+                                        <div className="pr-1">icon</div>
+                                        <div>20 Location</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
