@@ -18,13 +18,13 @@ const Home = () => {
                             <div>
                                 <div className="article-info py-1 mb-1">
                                     <div className="flex mb-1">
-                                        <div className="mr-auto">Drink & Coffee</div>
-                                        <div>November 8, 2023</div>
+                                        <div className="mr-auto small-text">Drink & Coffee</div>
+                                        <div className="small_text">November 8, 2023</div>
                                     </div>
                                     <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
                                 </div>
                                 <div className="flex">
-                                    <div className="mr-auto">Read more</div>
+                                    <div className="mr-auto"><a href="#">Read more</a></div>
                                     <div>Share</div>
                                 </div>
                             </div>
@@ -36,13 +36,13 @@ const Home = () => {
                             <div>
                                 <div className="article-info py-1 mb-1">
                                     <div className="flex mb-1">
-                                        <div className="mr-auto">Drink & Coffee</div>
-                                        <div>November 8, 2023</div>
+                                        <div className="mr-auto small-text">Drink & Coffee</div>
+                                        <div className="small_text">November 8, 2023</div>
                                     </div>
                                     <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
                                 </div>
                                 <div className="flex">
-                                    <div className="mr-auto">Read more</div>
+                                    <div className="mr-auto"><a href="#">Read more</a></div>
                                     <div>Share</div>
                                 </div>
                             </div>
@@ -54,13 +54,13 @@ const Home = () => {
                             <div>
                                 <div className="article-info py-1 mb-1">
                                     <div className="flex mb-1">
-                                        <div className="mr-auto">Drink & Coffee</div>
-                                        <div>November 8, 2023</div>
+                                        <div className="mr-auto small-text">Drink & Coffee</div>
+                                        <div className="small_text">November 8, 2023</div>
                                     </div>
                                     <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
                                 </div>
                                 <div className="flex">
-                                    <div className="mr-auto">Read more</div>
+                                    <div className="mr-auto"><a href="#">Read more</a></div>
                                     <div>Share</div>
                                 </div>
                             </div>
@@ -93,13 +93,13 @@ const Home = () => {
                             <div>
                                 <div className="article-info py-1 mb-1">
                                     <div className="flex mb-1">
-                                        <div className="mr-auto">Drink & Coffee</div>
-                                        <div>November 8, 2023</div>
+                                        <div className="mr-auto small_text">Drink & Coffee</div>
+                                        <div className="small_text">November 8, 2023</div>
                                     </div>
                                     <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
                                 </div>
                                 <div className="flex">
-                                    <div className="mr-auto">Read more</div>
+                                    <div className="mr-auto"><a href="#">Read more</a></div>
                                     <div>Share</div>
                                 </div>
                             </div>
@@ -111,13 +111,13 @@ const Home = () => {
                             <div>
                                 <div className="article-info py-1 mb-1">
                                     <div className="flex mb-1">
-                                        <div className="mr-auto">Drink & Coffee</div>
-                                        <div>November 8, 2023</div>
+                                        <div className="mr-auto small_text">Drink & Coffee</div>
+                                        <div className="small_text">November 8, 2023</div>
                                     </div>
                                     <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
                                 </div>
                                 <div className="flex">
-                                    <div className="mr-auto">Read more</div>
+                                    <div className="mr-auto"><a href="#">Read more</a></div>
                                     <div>Share</div>
                                 </div>
                             </div>
@@ -129,13 +129,13 @@ const Home = () => {
                             <div>
                                 <div className="article-info py-1 mb-1">
                                     <div className="flex mb-1">
-                                        <div className="mr-auto">Drink & Coffee</div>
-                                        <div>November 8, 2023</div>
+                                        <div className="mr-auto small_text">Drink & Coffee</div>
+                                        <div className="small_text">November 8, 2023</div>
                                     </div>
                                     <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
                                 </div>
                                 <div className="flex">
-                                    <div className="mr-auto">Read more</div>
+                                    <div className="mr-auto"><a href="#">Read more</a></div>
                                     <div>Share</div>
                                 </div>
                             </div>
@@ -147,13 +147,13 @@ const Home = () => {
                             <div>
                                 <div className="article-info py-1 mb-1">
                                     <div className="flex mb-1">
-                                        <div className="mr-auto">Drink & Coffee</div>
-                                        <div>November 8, 2023</div>
+                                        <div className="mr-auto small_text">Drink & Coffee</div>
+                                        <div className="small_text">November 8, 2023</div>
                                     </div>
                                     <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
                                 </div>
                                 <div className="flex">
-                                    <div className="mr-auto">Read more</div>
+                                    <div className="mr-auto"><a href="#">Read more</a></div>
                                     <div>Share</div>
                                 </div>
                             </div>
@@ -164,8 +164,8 @@ const Home = () => {
                     <div className="contact-inner">
                         <div className="">
                             <div className="heading_3 mb-3">Connect with me</div>
-                            <div className=""><a>Nthduong898@gmail.com</a></div>
-                            <div><a>https://nthuyduong.github.io</a></div>
+                            <div className=""><a href="#">Nthduong898@gmail.com</a></div>
+                            <div><a href="#">https://nthuyduong.github.io</a></div>
                         </div>
                     </div>
                 </div>
