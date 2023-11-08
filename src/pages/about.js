@@ -3,9 +3,14 @@ import React from "react";
 const About = () => {
     return (
         <div className="about-blog-page container-fluid">
-            <div className="about-banner"></div>
+            <div className="about-banner">
+                <img className="w-100" src="./img/about/banner.jpg" alt="smile" loading="lazy"/>
+            </div>
             <div className="about-intro">
-                <div className="grid grid-cols-4 gap-4">
+                <div className="intro-decor absolute">
+                    <img className="w-100" src="./img/about/decor.svg" alt="smile" loading="lazy"/>
+                </div>
+                <div className="intro-inner grid grid-cols-4 gap-4 z-30">
                     <div className=""></div>
                     <div className="col-span-2 intro-content heading_5 text-center">
                         “Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
