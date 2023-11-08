@@ -32,6 +32,14 @@
   padding-bottom: 60px;
   border-bottom: 1px solid #DFE3EA;
 }
+.contact-me{
+  background-color: #DFE3EA;
+  padding: 100px;
+  .contact-me-inner{
+    background-color: #fff;
+    padding: 60px;
+  }
+}
 .subscribe-blog{
   padding-top: 60px;
   .email-signup{
