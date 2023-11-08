@@ -43,7 +43,7 @@ const About = () => {
             </div>
             <div className="what-we-do">
                 <div className="grid grid-cols-12 gap-4">
-                    <div className="col-span-4 we-do">
+                    <div className="col-span-12 md:col-span-4 we-do">
                         <div>
                             <img className="w-100" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                         </div>
@@ -55,7 +55,7 @@ const About = () => {
                             vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.
                         </div>
                     </div>
-                    <div className="col-span-4 we-do">
+                    <div className="col-span-12 md:col-span-4 we-do">
                         <div>
                             <img className="w-100" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                         </div>
@@ -67,7 +67,7 @@ const About = () => {
                             vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.
                         </div>
                     </div>
-                    <div className="col-span-4 we-do">
+                    <div className="col-span-12 md:col-span-4 we-do">
                         <div>
                             <img className="w-100" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                         </div>
@@ -83,7 +83,7 @@ const About = () => {
             </div>
             <div className="about-blog">
                 <div className="grid grid-cols-12 about-blog-inner flex gap-4">
-                    <div className="col-span-6 about-content m-auto p-5">
+                    <div className="col-span-12 md:col-span-6 about-content m-auto md:p-5">
                         <div className="heading_3 mb-2">About blog</div>
                         <div className="">
                             Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat
@@ -92,17 +92,17 @@ const About = () => {
                             sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
                         </div>
                     </div>
-                    <div className="col-span-6 img-abt-blog">
+                    <div className="col-span-12 md:col-span-6 img-abt-blog">
                         <img className="w-100" src="./img/about/abt-blog.jpg" alt="smile" loading="lazy"/>
                     </div>
                 </div>
             </div>
             <div className="blog-mission">
                 <div className="grid grid-cols-12 mission-inner flex gap-5">
-                    <div className="col-span-6 img-mission">
+                    <div className="col-span-12 md:col-span-6 img-mission">
                         <img className="w-100" src="./img/about/mission.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-6 mission-content m-auto p-5">
+                    <div className="col-span-12 md:col-span-6 mission-content m-auto md:p-5">
                         <div className="heading_3 mb-2">My mission</div>
                         <div>
                             Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat
@@ -113,9 +113,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="contact-me">
+            <div className="contact-me ">
                 <div className="contact-me-inner">
-                    <div className="heading_3 mb-4">Work With Me</div>
+                    <div className="heading_3 md:mb-4">Work With Me</div>
                     <div className="mb-3">Are you interested in collaborating? Contact me for more information or hire me for a UI freelance,
                         please visit my portfolio <a>https://nthuyduong.github.io.</a></div>
                     <div className="medium_text">Get in touch: Nthduong898@gmail.com</div>
@@ -123,8 +123,8 @@ const About = () => {
             </div>
             <div className="subscribe-blog">
                 <div className="grid grid-cols-6">
-                    <div className="col-span-2"></div>
-                    <div className="col-span-2">
+                    <div className="md:col-span-2"></div>
+                    <div className="col-span-6 md:col-span-2">
                         <div className="">
                             <div className="heading_3 text-center mb-5">Sign Up For Newsletters</div>
                             <div>
@@ -135,7 +135,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-span-2"></div>
+                    <div className="md:col-span-2"></div>
                 </div>
             </div>
         </div>
