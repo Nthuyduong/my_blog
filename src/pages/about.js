@@ -77,10 +77,10 @@ const About = () => {
                 </div>
             </div>
             <div className="about-blog">
-                <div className="grid grid-cols-12">
-                    <div className="col-span-6">
+                <div className="grid grid-cols-12 about-blog-inner flex">
+                    <div className="col-span-6 about-content m-auto">
                         <div className="heading_3 mb-2">About blog</div>
-                        <div>
+                        <div className="">
                             Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat
                             quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut
                             sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Diam nec ut
@@ -93,11 +93,11 @@ const About = () => {
                 </div>
             </div>
             <div className="blog-mission">
-                <div className="grid grid-cols-12">
+                <div className="grid grid-cols-12 mission-inner flex">
                     <div className="col-span-6 pr-5 img-mission">
                         <img className="w-100" src="./img/about/mission.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-6">
+                    <div className="col-span-6 mission-content m-auto">
                         <div className="heading_3 mb-2">My mission</div>
                         <div>
                             Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat
