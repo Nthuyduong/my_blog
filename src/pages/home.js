@@ -67,7 +67,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="p-100 category-destination">
+                <div className="category-destination">
                     <div className="grid grid-cols-4 gap-4">
                         <div className="col-span-2">
                             <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
@@ -83,7 +83,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="p-100">
                     <div className="heading_3 mb-4">Reader's Favorite</div>
                     <div className="grid grid-cols-12 gap-4 recently-update-blog">
                         <div className="col-span-3">
@@ -160,13 +160,12 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="home-contact-me p-100">
+                <div className="home-contact-me">
                     <div className="contact-inner">
                         <div className="">
-                            <div>Connect with me</div>
+                            <div className="heading_3 mb-3">Connect with me</div>
                             <div className=""><a>Nthduong898@gmail.com</a></div>
                             <div><a>https://nthuyduong.github.io</a></div>
-                            <div><a>nthd9.instagram.com</a></div>
                         </div>
                     </div>
                 </div>
