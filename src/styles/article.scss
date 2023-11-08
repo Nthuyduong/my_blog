@@ -17,6 +17,19 @@
     }
   }
 }
+.main-article{
+  padding-bottom: 60px;
+  border-bottom: 1px solid #DFE3EA;
+}
 .comment{
-
+  .comment-main{
+    padding: 24px 0;
+  }
+  .comment-border{
+    border-bottom: 1px solid #DFE3EA;
+  }
+  .cmt-select{
+    border: 1px solid #DFE3EA;
+    padding: 8px 8px;
+  }
 }

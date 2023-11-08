@@ -88,7 +88,81 @@ const Article = () => {
                             </div>
                         </div>
                         <div className="comment p-60">
-                            <div className="heading_3 mb-4">Comments</div>
+                            <div className="flex">
+                                <div className="heading_3 mb-4">Comments</div>
+                                <div className="ml-auto">
+                                    <select className="cmt-select">
+                                        <option value="">Newest comments</option>
+                                        <option value="">Oldest comments</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div className="comment-main">
+                                <div className="flex">
+                                    <div className="flex">
+                                        <div className="mr-2">
+                                            <img className="w-full" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
+                                        </div>
+                                        <div>
+                                            <div>3 days ago</div>
+                                            <div className="medium_text">Nthuyduong</div>
+                                        </div>
+                                    </div>
+                                    <div className="flex ml-auto">
+                                        <div>10</div>
+                                        <div>heart</div>
+                                    </div>
+                                </div>
+                                <div className="mt-2">
+                                    Baking time will vary if you change the pan size. Every oven is different so I can’t say
+                                    for certain what you’ll need to adjust it to. Be  sure to check on the cakes while they are baking.
+                                </div>
+                            </div>
+                            <div className="comment-border"></div>
+                            <div className="comment-main">
+                                <div className="flex">
+                                    <div className="flex">
+                                        <div className="mr-2">
+                                            <img className="w-full" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
+                                        </div>
+                                        <div>
+                                            <div>3 days ago</div>
+                                            <div className="medium_text">Nthuyduong</div>
+                                        </div>
+                                    </div>
+                                    <div className="flex ml-auto">
+                                        <div>10</div>
+                                        <div>heart</div>
+                                    </div>
+                                </div>
+                                <div className="mt-2">
+                                    Baking time will vary if you change the pan size. Every oven is different so I can’t say
+                                    for certain what you’ll need to adjust it to. Be  sure to check on the cakes while they are baking.
+                                </div>
+                            </div>
+                            <div className="comment-border"></div>
+                            <div className="comment-main">
+                                <div className="flex">
+                                    <div className="flex">
+                                        <div className="mr-2">
+                                            <img className="w-full" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
+                                        </div>
+                                        <div>
+                                            <div>3 days ago</div>
+                                            <div className="medium_text">Nthuyduong</div>
+                                        </div>
+                                    </div>
+                                    <div className="flex ml-auto">
+                                        <div>10</div>
+                                        <div>heart</div>
+                                    </div>
+                                </div>
+                                <div className="mt-2">
+                                    Baking time will vary if you change the pan size. Every oven is different so I can’t say
+                                    for certain what you’ll need to adjust it to. Be  sure to check on the cakes while they are baking.
+                                </div>
+                            </div>
+                            <div className="comment-border"></div>
                             <div className="comment-main">
                                 <div className="flex">
                                     <div className="flex">
@@ -111,6 +185,8 @@ const Article = () => {
                                 </div>
                             </div>
                         </div>
+                        {/*Leave a comment*/}
+                        <div></div>
                     </div>
                     <div className="col-span-1"></div>
                     <div className="col-span-3 article-sidebar">

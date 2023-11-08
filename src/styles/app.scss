@@ -77,8 +77,8 @@ $small_text: 12px;
   font-family: 'Karla', sans-serif;
 }
 .container-fluid{
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .p-60{
   padding-top: 60px;
@@ -93,8 +93,8 @@ $small_text: 12px;
   margin-bottom: 60px;
 }
 .nav_blog{
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
   .nav-blog-inner{
     border-bottom: 1px solid #DFE3EA;
   }
@@ -111,7 +111,7 @@ $small_text: 12px;
   margin-top: 60px;
 }
 .blog-footer{
-  padding: 0 120px;
+  padding: 0 20px;
   .blog-footer-inner{
     padding: 40px 0;
     border-top: 1px solid #DFE3EA;
@@ -123,5 +123,18 @@ $small_text: 12px;
     .my-social{
       justify-content: end;
     }
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container-fluid{
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .nav_blog {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .blog-footer {
+    padding: 0 120px;
   }
 }
