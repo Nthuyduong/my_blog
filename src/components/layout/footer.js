@@ -18,6 +18,9 @@ const Footer = () => {
                         <div>
                             <Link to={ROUTER.HOME} className="nav-link">National Library</Link>
                         </div>
+                        <div>
+                            <Link to={ROUTER.HOME} className="nav-link">Gusto Chela Coffee</Link>
+                        </div>
                     </div>
                     <div className="footer-info">
                         <div>
@@ -46,9 +49,30 @@ const Footer = () => {
                     </div>
                     <div className=""></div>
                     <div className="col-span-2">
-                        <div>Enter your email address to receive new posts in your inbox and seasonal newsletters with
+                        <div className="mb-2">Enter your email address to receive new posts in your inbox and seasonal newsletters with
                             extra goodies!</div>
-                        <div></div>
+                        <div>
+                            <div>
+                                <div className="my-input mb-3">
+                                    <input className="w-full p-1" placeholder="Email address"/>
+                                </div>
+                                <button className="w-full my-btn-pr" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="footer-sub">
+                <div className="grid grid-cols-12">
+                    <div className="col-span-9">
+                        <div>COPYRIGHT © 2023 · Nthduong Blog. ALL RIGHTS RESERVED</div>
+                    </div>
+                    <div className="col-span-3">
+                        <div className="my-social flex w-full">
+                            <div>Instagram</div>
+                            <div className="mx-3">Pinterest</div>
+                            <div>Behance</div>
+                        </div>
                     </div>
                 </div>
             </div>

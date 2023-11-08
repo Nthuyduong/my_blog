@@ -130,7 +130,7 @@ const About = () => {
                     <div className="heading_3 mb-4">Work With Me</div>
                     <div className="mb-3">Are you interested in collaborating? Contact me for more information or hire me for a UI freelance,
                         please visit my portfolio <a>https://nthuyduong.github.io.</a></div>
-                    <div>Get in touch: Nthduong898@gmail.com</div>
+                    <div className="medium_text">Get in touch: Nthduong898@gmail.com</div>
                 </div>
             </div>
             <div className="subscribe-blog">
@@ -140,7 +140,7 @@ const About = () => {
                         <div className="">
                             <div className="heading_3 text-center mb-5">Sign Up For Newsletters</div>
                             <div>
-                                <div className="email-signup mb-3">
+                                <div className="email-signup my-input mb-3">
                                     <input className="w-full" placeholder="Email address"/>
                                 </div>
                                 <button className="w-full my-btn-pr" type="submit">Subscribe</button>

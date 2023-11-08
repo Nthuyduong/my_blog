@@ -35,14 +35,14 @@ const Header = () => {
                         <div className="hidden sm:ml-0 md:ml-0 sm:block">
                             <div className="flex space-x-4">
                                 {/*Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"*/}
-                                <div className="bg-gray-900 rounded-md pr-4 py-2 text-sm font-medium">
+                                <div className="bg-gray-900 rounded-md pr-4 py-3 text-sm font-medium">
                                     <Link to={ROUTER.HOME} className="nav-link">Home</Link>
                                 </div>
-                                <div className="text-gray-300 hover:text-gray rounded-md pr-4 py-2 text-sm font-medium">
+                                <div className="text-gray-300 hover:text-gray rounded-md pr-4 py-3 text-sm font-medium">
                                     <Link to={ROUTER.ABOUT} className="nav-link">About</Link>
                                 </div>
                                 <div className="relative destination-navdrop">
-                                    <div className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-4 py-2 text-sm font-medium">
+                                    <div className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-4 py-3 text-sm font-medium">
                                         <Link to={ROUTER.DESTINATION} className="nav-link">Destination</Link>
                                     </div>
                                     <div className="navdrop-inner absolute left-30  w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
@@ -60,7 +60,7 @@ const Header = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="rounded-md pr-4 py-2 text-sm font-medium">
+                                <div className="rounded-md pr-4 py-3 text-sm font-medium">
                                     <Link to={ROUTER.GALLERY} className="nav-link">Gallery</Link>
                                 </div>
                             </div>

@@ -69,6 +69,10 @@ $small_text: 12px;
   padding: 8px 32px;
 }
 
+.my-input{
+  border: 1px solid #DFE3EA;
+}
+
 .body{
   font-family: 'Karla', sans-serif;
 }
@@ -106,5 +110,13 @@ $small_text: 12px;
   .blog-footer-inner{
     padding: 40px 0;
     border-top: 1px solid #DFE3EA;
+    border-bottom: 1px solid #DFE3EA;
+  }
+  .footer-sub{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .my-social{
+      justify-content: end;
+    }
   }
 }
