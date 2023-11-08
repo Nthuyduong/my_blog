@@ -28,7 +28,25 @@ const Destination = () => {
                     </div>
                 </div>
             </div>
-            <div className=""></div>
+            <div className="container-fluid p-60">
+                <div className="destination-title">
+                    <div className="flex justify-center">
+                        {/*breadcrumb*/}
+                        <div className="flex self-center">
+                            <ul className="flex">
+                                <li><a href="#">Home</a></li>
+                                <li className="mx-2">/</li>
+                                <li><a href="#">Destination</a></li>
+                            </ul>
+                        </div>
+                        <div className="heading_3 mx-auto">All Destinations</div>
+                        {/*Change layout*/}
+                        <div className="self-center flex">
+                            Change layout
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className=""></div>
         </div>
     )

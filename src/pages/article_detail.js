@@ -11,7 +11,9 @@ const Article = () => {
                             <div>
                                 <ul className="flex">
                                     <li><a href="#">Home</a></li>
+                                    <li className="mx-2">/</li>
                                     <li><a href="#">Home</a></li>
+                                    <li className="mx-2">/</li>
                                     <li><a href="#">Home</a></li>
                                 </ul>
                             </div>
