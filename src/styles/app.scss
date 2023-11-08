@@ -63,6 +63,12 @@ $small_text: 12px;
   line-height: $small_text*1.5;
 }
 
+.my-btn-pr{
+  background: $primary_color;
+  color: #fff;
+  padding: 8px 32px;
+}
+
 .body{
   font-family: 'Karla', sans-serif;
 }

@@ -32,3 +32,12 @@
   padding-bottom: 60px;
   border-bottom: 1px solid #DFE3EA;
 }
+.subscribe-blog{
+  padding-top: 60px;
+  .email-signup{
+    border: 1px solid #DFE3EA;
+    input{
+      padding: 8px 4px;
+    }
+  }
+}

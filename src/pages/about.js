@@ -109,10 +109,26 @@ const About = () => {
                 </div>
             </div>
             <div className="contact-me">
+                <div>
 
+                </div>
             </div>
             <div className="subscribe-blog">
-
+                <div className="grid grid-cols-6">
+                    <div className="col-span-2"></div>
+                    <div className="col-span-2">
+                        <div className="">
+                            <div className="heading_3 text-center mb-5">Sign Up For Newsletters</div>
+                            <div>
+                                <div className="email-signup mb-3">
+                                    <input className="w-full" placeholder="Email address"/>
+                                </div>
+                                <button className="w-full my-btn-pr" type="submit">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-2"></div>
+                </div>
             </div>
         </div>
     )
