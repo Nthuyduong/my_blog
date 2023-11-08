@@ -4,6 +4,9 @@ const Home = () => {
     return (
         <div>
             <div className="container-fluid">
+                <div className="home-banner">
+                    <img className="w-full" src="./img/home/banner.jpg" alt="smile" loading="lazy"/>
+                </div>
                 {/*Lastest on this blog*/}
                 <div className="recently-update">
                     <div className="heading_3 mb-4">Recently Update</div>
@@ -159,7 +162,7 @@ const Home = () => {
                 </div>
                 <div className="home-contact-me p-100">
                     <div className="contact-inner">
-                        <div>
+                        <div className="">
                             <div>Connect with me</div>
                             <div className=""><a>Nthduong898@gmail.com</a></div>
                             <div><a>https://nthuyduong.github.io</a></div>

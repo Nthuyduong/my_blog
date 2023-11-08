@@ -1,9 +1,18 @@
 .recently-update{
-
+  padding-top: 100px;
 }
 .article-info{
   border-bottom: 1px solid #DFE3EA;
 }
 .category-destination{
 
+}
+.home-contact-me{
+  padding: 140px 40px;
+  background-color: #DFE3EA;
+  .contact-inner{
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: #fff;
+  }
 }
