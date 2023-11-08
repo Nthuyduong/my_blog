@@ -21,8 +21,8 @@ const App = () => {
     <Router>
       <Switch>
         <Layout>
-          <Route extract path={ROUTER.HOME} component={Home}/>
-          <Route path={ROUTER.TEST} component={Test}/>
+          <Route exact path={ROUTER.HOME} component={Home}/>
+          {/*<Route path={ROUTER.TEST} component={Test}/>*/}
           <Route path={ROUTER.DESTINATION} component={Destination}/>
           <Route path={ROUTER.ARTICLE} component={Article}/>
           <Route path={ROUTER.SUBDES} component={Sub_destination}/>

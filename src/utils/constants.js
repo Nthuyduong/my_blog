@@ -7,4 +7,5 @@ export const ROUTER = {
     ABOUT: '/about',
     GALLERY: '/gallery',
     CONTACT: '/contact',
+    SEARCH: '/search',
 }

@@ -21,7 +21,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about-me p-60">
-                <div className="grid grid-cols-12 gap-5">
+                <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-5">
                         <img className="w-full" src="./img/about/abt-me.jpg" alt="smile" loading="lazy"/>
                     </div>
@@ -42,8 +42,8 @@ const About = () => {
                 </div>
             </div>
             <div className="what-we-do">
-                <div className="grid grid-cols-12 gap-5">
-                    <div className="col-span-3 we-do">
+                <div className="grid grid-cols-12 gap-4">
+                    <div className="col-span-4 we-do">
                         <div>
                             <img className="w-100" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                         </div>
@@ -55,19 +55,7 @@ const About = () => {
                             vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.
                         </div>
                     </div>
-                    <div className="col-span-3 we-do">
-                        <div>
-                            <img className="w-100" src="./img/about/do.svg" alt="smile" loading="lazy"/>
-                        </div>
-                        <div className="heading_5 my-2">
-                            Explore My Hometown
-                        </div>
-                        <div>
-                            Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
-                            vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.
-                        </div>
-                    </div>
-                    <div className="col-span-3 we-do">
+                    <div className="col-span-4 we-do">
                         <div>
                             <img className="w-100" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                         </div>
@@ -79,7 +67,7 @@ const About = () => {
                             vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.
                         </div>
                     </div>
-                    <div className="col-span-3 we-do">
+                    <div className="col-span-4 we-do">
                         <div>
                             <img className="w-100" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                         </div>
@@ -94,7 +82,7 @@ const About = () => {
                 </div>
             </div>
             <div className="about-blog">
-                <div className="grid grid-cols-12 about-blog-inner flex gap-5">
+                <div className="grid grid-cols-12 about-blog-inner flex gap-4">
                     <div className="col-span-6 about-content m-auto p-5">
                         <div className="heading_3 mb-2">About blog</div>
                         <div className="">
