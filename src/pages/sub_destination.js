@@ -61,7 +61,7 @@ const Sub_destination = () => {
                 </div>
             </div>
             <div className="container-fluid p-60">
-                <div className="sub-destination-title">
+                <div className="destination-title">
                     <div className="flex justify-center">
                         {/*breadcrumb*/}
                         <div className="flex self-center">
@@ -73,10 +73,14 @@ const Sub_destination = () => {
                                 <li><a href="#">Drink & Coffee</a></li>
                             </ul>
                         </div>
-                        <div className="heading_3 mx-auto">All Destinations</div>
+
                         {/*Change layout*/}
-                        <div className="self-center flex">
-                            Change layout
+                        <div className="self-center flex ml-auto">
+                            <select>
+                                <option value="">Recently update</option>
+                                <option value="">Oldest article</option>
+                                <option value="">Popular article</option>
+                            </select>
                         </div>
                     </div>
                 </div>
