@@ -52,49 +52,49 @@ const Gallery = () => {
             </div>
             <div className="container-fluid">
                 <div className="grid grid-cols-12 gap-2">
-                    <div className="col-span-3 test">
+                    <div className="col-span-3">
                         <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 row-span-2 test">
+                    <div className="col-span-3 row-span-2">
                         <img className="w-full" src="./img/gallery/rowspan.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-6 test">
+                    <div className="col-span-6">
                         <img className="w-full" src="./img/gallery/colspan.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 test">
+                    <div className="col-span-3">
                         <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 test">
+                    <div className="col-span-3">
                         <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 test">
+                    <div className="col-span-3">
                         <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 test">
+                    <div className="col-span-3">
                         <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 test">
+                    <div className="col-span-3">
                         <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-6 test">
+                    <div className="col-span-6">
                         <img className="w-full" src="./img/gallery/colspan.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-6 test">
+                    <div className="col-span-6">
                         <img className="w-full" src="./img/gallery/colspan.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 row-span-2 test">
+                    <div className="col-span-3 row-span-2">
                         <img className="w-full" src="./img/gallery/rowspan.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 test">
+                    <div className="col-span-3">
                         <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 test">
+                    <div className="col-span-3">
                         <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 test">
+                    <div className="col-span-3">
                         <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3 test">
+                    <div className="col-span-3">
                         <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
                     </div>
                 </div>
