@@ -47,7 +47,61 @@ const Destination = () => {
                     </div>
                 </div>
             </div>
-            <div className=""></div>
+            {/*all destination show here*/}
+            <div className="container-fluid destination all-destination-cate">
+                <div className="grid grid-cols-12 gap-5">
+                    <div className="col-span-4 destination-cate mb-4">
+                        <img className="w-full" src="./img/destination/des1.jpg" alt="smile" loading="lazy"/>
+                        <div className="text-center destination-cate-content">
+                            <div className="heading_5 my-1">Drink & Coffee</div>
+                            <div className="flex justify-center more-info">
+                                <div className="pr-2">398 Locations</div>
+                                <div className="pl-2">40 Articles</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-4 destination-cate">
+                        <img className="w-full" src="./img/destination/des1.jpg" alt="smile" loading="lazy"/>
+                        <div className="text-center destination-cate-content">
+                            <div className="heading_5 my-1">Drink & Coffee</div>
+                            <div className="flex justify-center more-info">
+                                <div className="pr-2">398 Locations</div>
+                                <div className="pl-2">40 Articles</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-4 destination-cate">
+                        <img className="w-full" src="./img/destination/des1.jpg" alt="smile" loading="lazy"/>
+                        <div className="text-center destination-cate-content">
+                            <div className="heading_5 my-1">Drink & Coffee</div>
+                            <div className="flex justify-center more-info">
+                                <div className="pr-2">398 Locations</div>
+                                <div className="pl-2">40 Articles</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-4 destination-cate">
+                        <img className="w-full" src="./img/destination/des1.jpg" alt="smile" loading="lazy"/>
+                        <div className="text-center destination-cate-content">
+                            <div className="heading_5 my-1">Drink & Coffee</div>
+                            <div className="flex justify-center more-info">
+                                <div className="pr-2">398 Locations</div>
+                                <div className="pl-2">40 Articles</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-4 destination-cate">
+                        <img className="w-full" src="./img/destination/des1.jpg" alt="smile" loading="lazy"/>
+                        <div className="text-center destination-cate-content">
+                            <div className="heading_5 my-1">Drink & Coffee</div>
+                            <div className="flex justify-center more-info">
+                                <div className="pr-2">398 Locations</div>
+                                <div className="pl-2">40 Articles</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
