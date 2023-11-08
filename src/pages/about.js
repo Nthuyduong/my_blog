@@ -3,9 +3,9 @@ import React from "react";
 const About = () => {
     return (
         <div className="about-blog-page container-fluid">
-            <div className="about-banner">
-                <img className="w-full" src="./img/about/banner.jpg" alt="smile" loading="lazy"/>
-            </div>
+            {/*<div className="about-banner">*/}
+            {/*    <img className="w-full" src="./img/about/banner.jpg" alt="smile" loading="lazy"/>*/}
+            {/*</div>*/}
             <div className="about-intro">
                 <div className="intro-decor absolute">
                     <img className="w-full" src="./img/about/decor.svg" alt="smile" loading="lazy"/>

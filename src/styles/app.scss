@@ -4,10 +4,10 @@
 @import "article";
 @import "destination";
 @import "subdestiantion";
-
 @import "tailwind";
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
+//Variant
 $primary_color: #232D3E;
 $secondary_color: #DFE3EA;
 $subcolor: #131416;
@@ -20,6 +20,7 @@ $medium_text: 16px;
 $body_text: 14px;
 $small_text: 12px;
 
+//Typo set up
 .heading_1 {
   font-size: $heading_1;
   line-height: $heading_1*1.25;
@@ -75,6 +76,7 @@ $small_text: 12px;
 
 .body{
   font-family: 'Karla', sans-serif;
+  color: $subcolor;
 }
 .container-fluid{
   padding-left: 20px;
