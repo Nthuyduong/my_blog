@@ -63,12 +63,13 @@ $small_text: 12px;
   font-size: $small_text;
   line-height: $small_text*1.5;
 }
-
+//Button
 .my-btn-pr{
   background: $primary_color;
   color: #fff;
   padding: 8px 32px;
 }
+//scroll to top btn
 .back-to-top {
   color: #333;
   position: fixed;
@@ -83,7 +84,7 @@ $small_text: 12px;
   justify-content: center;
   align-items: center;
 }
-
+//input style
 .my-input{
   border: 1px solid #DFE3EA;
 }
@@ -92,6 +93,7 @@ $small_text: 12px;
   font-family: 'Karla', sans-serif;
   color: $subcolor;
 }
+//spacing
 .container-fluid{
   padding-left: 20px;
   padding-right: 20px;
@@ -105,6 +107,7 @@ $small_text: 12px;
   padding-bottom: 100px;
 }
 
+//Header
 #blog-nav{
   margin-bottom: 60px;
   .active{
@@ -136,6 +139,7 @@ $small_text: 12px;
     display: block;
   }
 }
+//Footer
 #blog-footer{
   margin-top: 60px;
 }
@@ -167,26 +171,19 @@ $small_text: 12px;
     padding: 0 120px;
   }
 }
-//Carousel
-.carousel-control-prev{
-  left: -120px;
-  .visually-hidden{
-    display: none;
-  }
-  .carousel-control-prev-icon{
-    background-color: #000;
+//icon size
+.icon-sm{
+  height: 22px;
+}
+
+//hover gallery img to see content
+.gallery-s{
+  .gallery-inner{
+    .gallery-content{
+      display: none;
+    }
   }
 }
-.carousel-control-next{
-  right: -120px;
-  .visually-hidden{
-    display: none;
-  }
-  .carousel-control-next-icon{
-    padding: 10px;
-    background-color: #000;
-  }
-}
-.carousel-indicators{
-  display: none;
+.gallery-s:hover .gallery-content{
+  display: block;
 }

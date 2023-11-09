@@ -13,17 +13,24 @@ const Destination = () => {
                             <div className="heading_2">Welcome to Hanoi, Vietnam!</div>
                             <div className="flex justify-center mt-3">
                                 <div className="flex des-count pr-3">
-                                    <div className="pr-1">icon</div>
+                                    <div className="pr-1">
+                                        <img className="icon-sm" src="./img/icon/map.svg" alt="#" loading="lazy"></img>
+                                    </div>
                                     <div>5 Destinations</div>
                                 </div>
                                 <div className="flex location-count pl-3">
-                                    <div className="pr-1">icon</div>
+                                    <div className="pr-1">
+                                        <img className="icon-sm" src="./img/icon/map-pin.svg" alt="#" loading="lazy"></img>
+                                    </div>
                                     <div>400 Locations</div>
                                 </div>
                             </div>
                         </div>
                         <div className="show-all-btn">
                             <button className="scroll-down">Explore All Destinations</button>
+                            <div className="flex justify-center">
+                                <img src="./img/icon/chevron-down.svg" alt="#" loading="lazy"></img>
+                            </div>
                         </div>
                     </div>
                 </div>

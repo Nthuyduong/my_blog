@@ -6,9 +6,23 @@
 }
 .category-destination{
   padding-top: 100px;
-  .category-des-content{
-    top: 45%;
-    right: 25%;
+  .h-popular-des-ct{
+    overflow: hidden;
+    .category-des-content{
+      top: 45%;
+      right: 25%;
+      .article-count{
+        border-right: 1px solid #fff;
+      }
+    }
+    img{
+      transition: transform .25s ease;
+    }
+  }
+  .h-popular-des-ct:hover{
+    .des-ct-img img{
+      transform: scale(1.05);
+    }
   }
 }
 .home-contact-me{

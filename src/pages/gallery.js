@@ -10,14 +10,18 @@ const Gallery = () => {
                     </div>
                     <div className="text-center absolute destination-content text-white">
                         <div>
-                            <div className="heading_2">Welcome to Hanoi, Vietnam!</div>
+                            <div className="heading_2">My Gallery Images Spacing</div>
                             <div className="flex justify-center mt-3">
                                 <div className="flex des-count pr-3">
-                                    <div className="pr-1">icon</div>
+                                    <div className="pr-1">
+                                        <img className="icon-sm" src="./img/icon/map.svg" alt="#" loading="lazy"></img>
+                                    </div>
                                     <div>5 Destinations</div>
                                 </div>
                                 <div className="flex location-count pl-3">
-                                    <div className="pr-1">icon</div>
+                                    <div className="pr-1">
+                                        <img className="icon-sm" src="./img/icon/map-pin.svg" alt="#" loading="lazy"></img>
+                                    </div>
                                     <div>400 Locations</div>
                                 </div>
                             </div>
@@ -42,9 +46,10 @@ const Gallery = () => {
                         {/*Sort blog by*/}
                         <div className="self-center flex ml-auto">
                             <select>
-                                <option value="">Recently update</option>
-                                <option value="">Oldest article</option>
-                                <option value="">Popular article</option>
+                                <option selected hidden>Sort locations by</option>
+                                <option value="">My favorite</option>
+                                <option value="">Seeker's favorite</option>
+                                <option value="">New & Popular</option>
                             </select>
                         </div>
                     </div>
@@ -52,8 +57,18 @@ const Gallery = () => {
             </div>
             <div className="container-fluid">
                 <div className="grid grid-cols-12 gap-2">
-                    <div className="col-span-3">
-                        <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                    <div className="col-span-3 gallery-s">
+                        <div className="relative gallery-inner">
+                            <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute left-1/3 top-1/2 gallery-content">
+                                <div className="text-center">
+                                    <div className="heading_6 mb-1">Sorenta Coffee</div>
+                                    <div>
+                                        <a href="#">View detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-span-3 row-span-2">
                         <img className="w-full" src="./img/gallery/rowspan.jpg" alt="smile" loading="lazy"/>
@@ -61,20 +76,70 @@ const Gallery = () => {
                     <div className="col-span-6">
                         <img className="w-full" src="./img/gallery/colspan.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3">
-                        <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                    <div className="col-span-3 gallery-s">
+                        <div className="relative gallery-inner">
+                            <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute left-1/3 top-1/2 gallery-content">
+                                <div className="text-center">
+                                    <div className="heading_6 mb-1">Sorenta Coffee</div>
+                                    <div>
+                                        <a href="#">View detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-span-3">
-                        <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                    <div className="col-span-3 gallery-s">
+                        <div className="relative gallery-inner">
+                            <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute left-1/3 top-1/2 gallery-content">
+                                <div className="text-center">
+                                    <div className="heading_6 mb-1">Sorenta Coffee</div>
+                                    <div>
+                                        <a href="#">View detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-span-3">
-                        <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                    <div className="col-span-3 gallery-s">
+                        <div className="relative gallery-inner">
+                            <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute left-1/3 top-1/2 gallery-content">
+                                <div className="text-center">
+                                    <div className="heading_6 mb-1">Sorenta Coffee</div>
+                                    <div>
+                                        <a href="#">View detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-span-3">
-                        <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                    <div className="col-span-3 gallery-s">
+                        <div className="relative gallery-inner">
+                            <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute left-1/3 top-1/2 gallery-content">
+                                <div className="text-center">
+                                    <div className="heading_6 mb-1">Sorenta Coffee</div>
+                                    <div>
+                                        <a href="#">View detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-span-3">
-                        <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                    <div className="col-span-3 gallery-s">
+                        <div className="relative gallery-inner">
+                            <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute left-1/3 top-1/2 gallery-content">
+                                <div className="text-center">
+                                    <div className="heading_6 mb-1">Sorenta Coffee</div>
+                                    <div>
+                                        <a href="#">View detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-span-6">
                         <img className="w-full" src="./img/gallery/colspan.jpg" alt="smile" loading="lazy"/>
@@ -85,17 +150,57 @@ const Gallery = () => {
                     <div className="col-span-3 row-span-2">
                         <img className="w-full" src="./img/gallery/rowspan.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="col-span-3">
-                        <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                    <div className="col-span-3 gallery-s">
+                        <div className="relative gallery-inner">
+                            <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute left-1/3 top-1/2 gallery-content">
+                                <div className="text-center">
+                                    <div className="heading_6 mb-1">Sorenta Coffee</div>
+                                    <div>
+                                        <a href="#">View detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-span-3">
-                        <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                    <div className="col-span-3 gallery-s">
+                        <div className="relative gallery-inner">
+                            <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute left-1/3 top-1/2 gallery-content">
+                                <div className="text-center">
+                                    <div className="heading_6 mb-1">Sorenta Coffee</div>
+                                    <div>
+                                        <a href="#">View detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-span-3">
-                        <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                    <div className="col-span-3 gallery-s">
+                        <div className="relative gallery-inner">
+                            <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute left-1/3 top-1/2 gallery-content">
+                                <div className="text-center">
+                                    <div className="heading_6 mb-1">Sorenta Coffee</div>
+                                    <div>
+                                        <a href="#">View detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-span-3">
-                        <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                    <div className="col-span-3 gallery-s">
+                        <div className="relative gallery-inner">
+                            <img className="w-full" src="./img/gallery/ori.jpg" alt="smile" loading="lazy"/>
+                            <div className="absolute left-1/3 top-1/2 gallery-content">
+                                <div className="text-center">
+                                    <div className="heading_6 mb-1">Sorenta Coffee</div>
+                                    <div>
+                                        <a href="#">View detail</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
