@@ -188,7 +188,32 @@ const Article = () => {
                             </div>
                         </div>
                         {/*Leave a comment*/}
-                        <div></div>
+                        <div className="leavecmt">
+                            <div className="mb-5">
+                                <div className="heading_2 mb-2">Leave a comment</div>
+                                <div>Your email address will not be published. Required fields are marked *</div>
+                            </div>
+                            <div className="">
+                                <div className="grid grid-cols-12 gap-3">
+                                    <div className="col-span-6">
+                                        <div className="my-input mb-3">
+                                            <input className="p-1" placeholder="Your name"/>
+                                        </div>
+                                    </div>
+                                    <div className="col-span-6">
+                                        <div className="my-input mb-3">
+                                            <input className="p-1" placeholder="Email address *"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="my-input mb-3">
+                                    <textarea rows="5" className="w-full p-1" placeholder="Message *"></textarea>
+                                </div>
+                                <div className="flex justify-center">
+                                    <button className="w-3/12 my-btn-pr" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className="col-span-1"></div>
                     <div className="col-span-3 article-sidebar">

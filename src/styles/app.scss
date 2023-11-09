@@ -107,6 +107,19 @@ $small_text: 12px;
 
 #blog-nav{
   margin-bottom: 60px;
+  .active{
+    width: 100%;
+    position: fixed;
+    height: 61px;
+    top: 0px;
+    transition: 0.3s linear;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #E4E4E4;
+    z-index: 1000;
+  }
 }
 .nav_blog{
   padding-left: 20px;
