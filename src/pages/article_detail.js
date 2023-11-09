@@ -67,15 +67,8 @@ const Article = () => {
                                     Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
                                     Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
                                 </div>
-                                <div>
-                                    Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
-                                    Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
-                                    Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
-                                </div>
-                                <div>
-                                    Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
-                                    Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
-                                    Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
+                                <div className="my-4">
+                                    <img className="w-full" src="./img/article/article.jpg" alt="smile" loading="lazy"/>
                                 </div>
                                 <div>
                                     Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
@@ -189,7 +182,7 @@ const Article = () => {
                         </div>
                         {/*Leave a comment*/}
                         <div className="leavecmt">
-                            <div className="mb-5">
+                            <div className="mb-5 text-center">
                                 <div className="heading_2 mb-2">Leave a comment</div>
                                 <div>Your email address will not be published. Required fields are marked *</div>
                             </div>
@@ -197,16 +190,16 @@ const Article = () => {
                                 <div className="grid grid-cols-12 gap-3">
                                     <div className="col-span-6">
                                         <div className="my-input mb-3">
-                                            <input className="p-1" placeholder="Your name"/>
+                                            <input className="w-full p-1" placeholder="Your name"/>
                                         </div>
                                     </div>
                                     <div className="col-span-6">
                                         <div className="my-input mb-3">
-                                            <input className="p-1" placeholder="Email address *"/>
+                                            <input className="w-full p-1" placeholder="Email address *"/>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="my-input mb-3">
+                                <div className="my-input mb-3 user-cmt">
                                     <textarea rows="5" className="w-full p-1" placeholder="Message *"></textarea>
                                 </div>
                                 <div className="flex justify-center">
@@ -243,16 +236,16 @@ const Article = () => {
                             <div className="my-4">
                                 <div className="heading_4 mb-3">Sign up for email</div>
                                 <div>
-                                    <div className="email-signup my-input mb-3">
-                                        <input className="w-full my-1" placeholder="Email address"/>
+                                    <div className="email-signup my-input mb-3 ">
+                                        <input className="w-full p-2" placeholder="Email address"/>
                                     </div>
                                     <button className="w-full my-btn-pr" type="submit">Subscribe</button>
                                 </div>
                             </div>
                             <div className="pb-4">
-                                <div className="heading_4 mb-3">Recommended</div>
+                                <div className="heading_4 mb-2">Recommended</div>
                                 <div className="re-article">
-                                    <div className="mt-4">
+                                    <div className="mt-2">
                                         <img className="w-100" src="./img/article/recommend.jpg" alt="smile" loading="lazy"/>
                                     </div>
                                     <div className="my-1">
@@ -277,6 +270,7 @@ const Article = () => {
                                 </div>
                             </div>
                             <div className="share-on-social">
+                                <div className="text-center heading_5 mb-2">Share it on</div>
                                 <div className="flex justify-center">
                                     <div className="">f</div>
                                     <div className="mx-2">i</div>

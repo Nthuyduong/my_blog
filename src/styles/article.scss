@@ -36,4 +36,8 @@
 .leavecmt{
   padding-top:60px;
   border-top: 1px solid #DFE3EA;
+  .user-cmt{
+    display: inline-grid;
+    width: 100%;
+  }
 }
