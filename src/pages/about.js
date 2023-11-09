@@ -45,7 +45,7 @@ const About = () => {
                 <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-12 md:col-span-4 we-do">
                         <div>
-                            <img className="w-100" src="./img/about/do.svg" alt="smile" loading="lazy"/>
+                            <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                         </div>
                         <div className="heading_5 my-2">
                             Making My Passion
@@ -57,7 +57,7 @@ const About = () => {
                     </div>
                     <div className="col-span-12 md:col-span-4 we-do">
                         <div>
-                            <img className="w-100" src="./img/about/do.svg" alt="smile" loading="lazy"/>
+                            <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                         </div>
                         <div className="heading_5 my-2">
                             Sharing All Destinations
@@ -69,7 +69,7 @@ const About = () => {
                     </div>
                     <div className="col-span-12 md:col-span-4 we-do">
                         <div>
-                            <img className="w-100" src="./img/about/do.svg" alt="smile" loading="lazy"/>
+                            <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                         </div>
                         <div className="heading_5 my-2">
                             Connect With You
