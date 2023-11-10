@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import './App.css';
 import {ROUTER} from "./utils/constants";
-import Test from "./pages/test";
 import Home from "./pages/home";
 import Destination from "./pages/destination";
 import Article from "./pages/article_detail";
@@ -15,6 +14,7 @@ import About from "./pages/about";
 import Gallery from "./pages/gallery";
 import Contact from "./pages/contact";
 import Layout from "./components/layout";
+import Search from "./pages/search";
 
 const App = () => {
   return (
@@ -29,6 +29,7 @@ const App = () => {
           <Route path={ROUTER.ABOUT} component={About}/>
           <Route path={ROUTER.CONTACT} component={Contact}/>
           <Route path={ROUTER.GALLERY} component={Gallery}/>
+          <Route path={ROUTER.SEARCH} component={Search}/>
         </Layout>
       </Switch>
     </Router>

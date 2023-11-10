@@ -1,10 +1,6 @@
 import React from "react";
 import Header from "./header";
 import Footer from "./footer";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import "@fortawesome/fontawesome-svg-core"
-import "@fortawesome/react-fontawesome"
-import {faArrowDown, faArrowRight, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 
 const Layout = ({ children }) => {
     //Back-to-top function
@@ -19,7 +15,7 @@ const Layout = ({ children }) => {
             </div>
             <Footer />
             <div className="back-to-top" onClick={() => { scrollToTop() }}>
-                <FontAwesomeIcon className="icon-up" icon={faArrowUp}/>
+                <img className="icon-sm" src="/img/icon/chevron-up-black.svg" alt="smile" loading="lazy"/>
             </div>
         </div>
     )

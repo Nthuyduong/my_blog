@@ -1,6 +1,107 @@
-import React from "react";
+import React, {useState} from "react";
 
 const Home = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const slidesData = [
+        {
+            id: 1,
+            items: [
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+            ],
+        },
+        {
+            id: 2,
+            items: [
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+            ],
+        },
+        {
+            id: 3,
+            items: [
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Drink & Coffee",
+                    time: "November 6, 2023",
+                    title: "Title 1",
+                },
+            ],
+        },
+        // Add more objects as needed
+    ];
+
+
+    const nextSlide = () => {
+        setActiveIndex((prevIndex) => (prevIndex + 1) % slidesData.length);
+    };
+
+    const prevSlide = () => {
+        setActiveIndex((prevIndex) => (prevIndex - 1 + slidesData.length) % slidesData.length);
+    };
     return (
         <div>
             <div className="container-fluid">
@@ -158,80 +259,119 @@ const Home = () => {
                 </div>
                 <div className="p-100">
                     <div className="heading_3 mb-4">Reader's Favorite</div>
-                    <div className="grid grid-cols-12 gap-4 recently-update-blog">
-                        <div className="col-span-12 md:col-span-6 lg:col-span-3">
-                            <div>
-                                <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
-                            </div>
-                            <div>
-                                <div className="article-info py-1 mb-1">
-                                    <div className="flex mb-1">
-                                        <div className="mr-auto small_text">Drink & Coffee</div>
-                                        <div className="small_text">November 8, 2023</div>
-                                    </div>
-                                    <div className="heading_6">Top 5 beautiful Coffee Shop in HaNoi</div>
-                                </div>
-                                <div className="flex">
-                                    <div className="mr-auto"><a href="#">Read more</a></div>
-                                    <div>Share</div>
-                                </div>
-                            </div>
+                    <div className="flex relative carousel-component">
+                        <div className="absolute prev-button">
+                            <button className="my-prev-btn" onClick={prevSlide}>
+                                <img className="icon-sm" src="./img/icon/chevron-left-black.svg" alt="smile" loading="lazy"/>
+                            </button>
                         </div>
-                        <div className="col-span-12 md:col-span-6 lg:col-span-3">
-                            <div>
-                                <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
-                            </div>
-                            <div>
-                                <div className="article-info py-1 mb-1">
-                                    <div className="flex mb-1">
-                                        <div className="mr-auto small_text">Drink & Coffee</div>
-                                        <div className="small_text">November 8, 2023</div>
-                                    </div>
-                                    <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
+                        <div className="carousel-inner">
+                            {slidesData.map((slide, index) => (
+                                <div
+                                    className="my-carousel grid grid-cols-12 gap-4"
+                                    key={slide.id}
+                                    style={{ display: index === activeIndex ? "grid" : "none" }}
+                                >
+                                    {slide.items.map((item, itemIndex) => (
+                                        <div className="col-span-3" key={itemIndex}>
+                                            <img src={item.image} alt={`Image ${itemIndex + 1}`} />
+                                            <div className="article-info py-1 mb-1">
+                                                <div className="flex mb-1">
+                                                    <div className="mr-auto small_text">{item.tag}</div>
+                                                    <div className="small_text">{item.time}</div>
+                                                </div>
+                                                <div className="heading_6">{item.title}</div>
+                                            </div>
+                                            <div className="flex">
+                                                <div className="mr-auto"><a href="#">Read more</a></div>
+                                                <div>Share</div>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
-                                <div className="flex">
-                                    <div className="mr-auto"><a href="#">Read more</a></div>
-                                    <div>Share</div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
-                        <div className="col-span-12 md:col-span-6 lg:col-span-3">
-                            <div>
-                                <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
-                            </div>
-                            <div>
-                                <div className="article-info py-1 mb-1">
-                                    <div className="flex mb-1">
-                                        <div className="mr-auto small_text">Drink & Coffee</div>
-                                        <div className="small_text">November 8, 2023</div>
-                                    </div>
-                                    <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
-                                </div>
-                                <div className="flex">
-                                    <div className="mr-auto"><a href="#">Read more</a></div>
-                                    <div>Share</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-span-12 md:col-span-6 lg:col-span-3">
-                            <div>
-                                <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
-                            </div>
-                            <div>
-                                <div className="article-info py-1 mb-1">
-                                    <div className="flex mb-1">
-                                        <div className="mr-auto small_text">Drink & Coffee</div>
-                                        <div className="small_text">November 8, 2023</div>
-                                    </div>
-                                    <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
-                                </div>
-                                <div className="flex">
-                                    <div className="mr-auto"><a href="#">Read more</a></div>
-                                    <div>Share</div>
-                                </div>
-                            </div>
+                        <div className="absolute next-button">
+                            <button className="my-next-btn" onClick={nextSlide}>
+                                <img className="icon-sm" src="./img/icon/chevron-right-black.svg" alt="smile" loading="lazy"/>
+                            </button>
                         </div>
                     </div>
+
+                    {/*<div className="grid grid-cols-12 gap-4 recently-update-blog">*/}
+                    {/*    <div className="col-span-12 md:col-span-6 lg:col-span-3">*/}
+                    {/*        <div>*/}
+                    {/*            <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>*/}
+                    {/*        </div>*/}
+                    {/*        <div>*/}
+                    {/*            <div className="article-info py-1 mb-1">*/}
+                    {/*                <div className="flex mb-1">*/}
+                    {/*                    <div className="mr-auto small_text">Drink & Coffee</div>*/}
+                    {/*                    <div className="small_text">November 8, 2023</div>*/}
+                    {/*                </div>*/}
+                    {/*                <div className="heading_6">Top 5 beautiful Coffee Shop in HaNoi</div>*/}
+                    {/*            </div>*/}
+                    {/*            <div className="flex">*/}
+                    {/*                <div className="mr-auto"><a href="#">Read more</a></div>*/}
+                    {/*                <div>Share</div>*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="col-span-12 md:col-span-6 lg:col-span-3">*/}
+                    {/*        <div>*/}
+                    {/*            <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>*/}
+                    {/*        </div>*/}
+                    {/*        <div>*/}
+                    {/*            <div className="article-info py-1 mb-1">*/}
+                    {/*                <div className="flex mb-1">*/}
+                    {/*                    <div className="mr-auto small_text">Drink & Coffee</div>*/}
+                    {/*                    <div className="small_text">November 8, 2023</div>*/}
+                    {/*                </div>*/}
+                    {/*                <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>*/}
+                    {/*            </div>*/}
+                    {/*            <div className="flex">*/}
+                    {/*                <div className="mr-auto"><a href="#">Read more</a></div>*/}
+                    {/*                <div>Share</div>*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="col-span-12 md:col-span-6 lg:col-span-3">*/}
+                    {/*        <div>*/}
+                    {/*            <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>*/}
+                    {/*        </div>*/}
+                    {/*        <div>*/}
+                    {/*            <div className="article-info py-1 mb-1">*/}
+                    {/*                <div className="flex mb-1">*/}
+                    {/*                    <div className="mr-auto small_text">Drink & Coffee</div>*/}
+                    {/*                    <div className="small_text">November 8, 2023</div>*/}
+                    {/*                </div>*/}
+                    {/*                <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>*/}
+                    {/*            </div>*/}
+                    {/*            <div className="flex">*/}
+                    {/*                <div className="mr-auto"><a href="#">Read more</a></div>*/}
+                    {/*                <div>Share</div>*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="col-span-12 md:col-span-6 lg:col-span-3">*/}
+                    {/*        <div>*/}
+                    {/*            <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>*/}
+                    {/*        </div>*/}
+                    {/*        <div>*/}
+                    {/*            <div className="article-info py-1 mb-1">*/}
+                    {/*                <div className="flex mb-1">*/}
+                    {/*                    <div className="mr-auto small_text">Drink & Coffee</div>*/}
+                    {/*                    <div className="small_text">November 8, 2023</div>*/}
+                    {/*                </div>*/}
+                    {/*                <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>*/}
+                    {/*            </div>*/}
+                    {/*            <div className="flex">*/}
+                    {/*                <div className="mr-auto"><a href="#">Read more</a></div>*/}
+                    {/*                <div>Share</div>*/}
+                    {/*            </div>*/}
+                    {/*        </div>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
                 <div className="home-contact-me">
                     <div className="contact-inner">
