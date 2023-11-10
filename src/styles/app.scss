@@ -70,6 +70,11 @@ $small_text: 12px;
   color: #fff;
   padding: 8px 32px;
 }
+.my-btn-pr:hover{
+  background: #19202B;
+  color: #fff;
+}
+
 //scroll to top btn
 .back-to-top {
   color: #333;
@@ -88,6 +93,12 @@ $small_text: 12px;
 //input style
 .my-input{
   border: 1px solid #DFE3EA;
+}
+input:focus-visible{
+  outline: $primary_color solid 1px;
+}
+textarea:focus-visible{
+  outline: $primary_color solid 1px;
 }
 
 .body{
@@ -175,6 +186,9 @@ $small_text: 12px;
 //icon size
 .icon-sm{
   height: 22px;
+}
+.icon-ssm{
+  height: 20px;
 }
 
 //hover gallery img to see content

@@ -12,9 +12,9 @@ const Article = () => {
                                 <ul className="flex">
                                     <li><a href="#">Home</a></li>
                                     <li className="mx-2">/</li>
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Destinations</a></li>
                                     <li className="mx-2">/</li>
-                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Drink & Coffee</a></li>
                                 </ul>
                             </div>
                             {/*author and more information*/}
@@ -22,9 +22,11 @@ const Article = () => {
                                 <div className="flex">
                                     <div className="flex">
                                         <div>By Nthduong</div>
-                                        <div className="flex">
-                                            <div>clock</div>
-                                            <div>By Nthduong</div>
+                                        <div className="flex ml-3">
+                                            <div className="mr-1">
+                                                <img className="icon-sm" src="./img/icon/clock.svg" alt="smile" loading="lazy"/>
+                                            </div>
+                                            <div>November 6, 2023</div>
                                         </div>
                                     </div>
                                     <div className="ml-auto">About 10 minutes read</div>
@@ -216,9 +218,9 @@ const Article = () => {
                                 <div>
                                     <ul>
                                         <li><a href="#">Vietnam With Kids: 6 Best Vietnam Family Holiday Destinations + Travel Tips</a></li>
+                                        <li className="my-1"><a href="#">Vietnam With Kids: 6 Best Vietnam Family Holiday Destinations + Travel Tips</a></li>
                                         <li><a href="#">Vietnam With Kids: 6 Best Vietnam Family Holiday Destinations + Travel Tips</a></li>
-                                        <li><a href="#">Vietnam With Kids: 6 Best Vietnam Family Holiday Destinations + Travel Tips</a></li>
-                                        <li><a href="#">Vietnam With Kids: 6 Best Vietnam Family Holiday Destinations + Travel Tips</a></li>
+                                        <li className="mt-1"><a href="#">Vietnam With Kids: 6 Best Vietnam Family Holiday Destinations + Travel Tips</a></li>
                                     </ul>
                                 </div>
                             </div>

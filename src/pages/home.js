@@ -1,4 +1,6 @@
 import React, {useState} from "react";
+import {Link} from "react-router-dom";
+import {ROUTER} from "../utils/constants";
 
 const Home = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -114,7 +116,9 @@ const Home = () => {
                     <div className="grid grid-cols-12 gap-4 recently-update-blog">
                         <div className="col-span-12 md:col-span-4">
                             <div>
-                                <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                <Link to={ROUTER.ARTICLE}>
+                                    <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                </Link>
                             </div>
                             <div>
                                 <div className="article-info py-1 mb-1">
@@ -274,13 +278,21 @@ const Home = () => {
                                 >
                                     {slide.items.map((item, itemIndex) => (
                                         <div className="col-span-3" key={itemIndex}>
-                                            <img src={item.image} alt={`Image ${itemIndex + 1}`} />
+                                            <Link to={ROUTER.ARTICLE}>
+                                                {/*<img*/}
+                                                {/*    src={`./img/home/article${itemIndex + 1}.jpg`}*/}
+                                                {/*    alt={`Image ${itemIndex + 1}`}*/}
+                                                {/*/>*/}
+                                                <img src={item.image} alt={`Image ${itemIndex + 1}`} />
+                                            </Link>
                                             <div className="article-info py-1 mb-1">
                                                 <div className="flex mb-1">
                                                     <div className="mr-auto small_text">{item.tag}</div>
                                                     <div className="small_text">{item.time}</div>
                                                 </div>
-                                                <div className="heading_6">{item.title}</div>
+                                                <Link to={ROUTER.ARTICLE}>
+                                                    <div className="heading_6">{item.title}</div>
+                                                </Link>
                                             </div>
                                             <div className="flex">
                                                 <div className="mr-auto"><a href="#">Read more</a></div>
