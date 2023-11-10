@@ -183,6 +183,7 @@ textarea:focus-visible{
   .destination-navdrop{
     .navdrop-inner{
       display: none;
+      width: max-content;
     }
   }
   .destination-navdrop:hover .navdrop-inner{
