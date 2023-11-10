@@ -100,7 +100,9 @@ input:focus-visible{
 textarea:focus-visible{
   outline: $primary_color solid 1px;
 }
-
+.my-search-bar{
+  border-bottom: 1px solid #DFE3EA;
+}
 .body{
   font-family: 'Karla', sans-serif;
   color: $subcolor;
@@ -118,7 +120,34 @@ textarea:focus-visible{
   padding-top: 100px;
   padding-bottom: 100px;
 }
-
+//Search bar
+.searchbar{
+  position: fixed;
+  z-index: 3000;
+  background: #fff;
+  top:0;
+  right:0;
+  left: 0;
+  .search-bar-inner{
+    .search-here{
+      border-bottom: 1px solid #E4E4E4;
+      .grid{
+        height: 68px;
+        .close-search{
+          align-self: center;
+          display: flex;
+          justify-content: end;
+        }
+      }
+    }
+  }
+}
+.s-true{
+  display: block;
+}
+.s-false{
+  display: none;
+}
 //Header
 #blog-nav{
   margin-bottom: 60px;
@@ -137,8 +166,6 @@ textarea:focus-visible{
   }
 }
 .nav_blog{
-  padding-left: 20px;
-  padding-right: 20px;
   .nav-blog-inner{
     border-bottom: 1px solid #DFE3EA;
   }
@@ -172,6 +199,10 @@ textarea:focus-visible{
 }
 @media only screen and (min-width: 768px) {
   .container-fluid{
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .search-bar-inner{
     padding-left: 120px;
     padding-right: 120px;
   }
