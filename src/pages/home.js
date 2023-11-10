@@ -13,19 +13,19 @@ const Home = () => {
                     image: "./img/home/article.jpg",
                     tag: "Drink & Coffee",
                     time: "November 6, 2023",
-                    title: "Title 1",
+                    title: "Top 5 Coffee Shop in HaNoi",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Learn & Work",
+                    time: "November 6, 2023",
+                    title: "Beautiful places for study",
                 },
                 {
                     image: "./img/home/article.jpg",
                     tag: "Drink & Coffee",
                     time: "November 6, 2023",
-                    title: "Title 1",
-                },
-                {
-                    image: "./img/home/article.jpg",
-                    tag: "Drink & Coffee",
-                    time: "November 6, 2023",
-                    title: "Title 1",
+                    title: "Why Sorota Coffee is so hot?",
                 },
                 {
                     image: "./img/home/article.jpg",
@@ -40,21 +40,21 @@ const Home = () => {
             items: [
                 {
                     image: "./img/home/article.jpg",
-                    tag: "Drink & Coffee",
+                    tag: "Photo Spots",
                     time: "November 6, 2023",
-                    title: "Title 1",
+                    title: "Welcome to Hanoi, Vietnam",
+                },
+                {
+                    image: "./img/home/article.jpg",
+                    tag: "Music & Art",
+                    time: "November 6, 2023",
+                    title: "Best Handmade ceramic shop",
                 },
                 {
                     image: "./img/home/article.jpg",
                     tag: "Drink & Coffee",
                     time: "November 6, 2023",
-                    title: "Title 1",
-                },
-                {
-                    image: "./img/home/article.jpg",
-                    tag: "Drink & Coffee",
-                    time: "November 6, 2023",
-                    title: "Title 1",
+                    title: "Find your best destinations",
                 },
                 {
                     image: "./img/home/article.jpg",
@@ -75,9 +75,9 @@ const Home = () => {
                 },
                 {
                     image: "./img/home/article.jpg",
-                    tag: "Drink & Coffee",
+                    tag: "Photo Spots",
                     time: "November 6, 2023",
-                    title: "Title 1",
+                    title: "Hanoi in my heart",
                 },
                 {
                     image: "./img/home/article.jpg",

@@ -97,6 +97,17 @@ $small_text: 12px;
 input:focus-visible{
   outline: $primary_color solid 1px;
 }
+.nav-search{
+  border: none !important;
+}
+.my-search-bar{
+  input:focus-visible{
+    outline: none;
+  }
+  .searchbar-head{
+    width: 700px;
+  }
+}
 textarea:focus-visible{
   outline: $primary_color solid 1px;
 }

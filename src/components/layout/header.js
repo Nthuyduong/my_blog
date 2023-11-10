@@ -36,11 +36,11 @@ const Header = () => {
                         <div className="grid grid-cols-12">
                             <div className="col-span-10 self-center">
                                 <div className="flex">
-                                    <div className="flex align-center pr-2">
+                                    <div className="flex align-center self-center pr-2">
                                         <img className="icon-ssm" src="./img/icon/Search.svg" alt="smile" loading="lazy"/>
                                     </div>
-                                    <div className=".my-search-bar">
-                                        <input className="w-full p-1" placeholder="Search your destination..."/>
+                                    <div className="my-search-bar nav-search">
+                                        <input className="searchbar-head p-1" placeholder="Search your destination..."/>
                                     </div>
                                 </div>
                             </div>
