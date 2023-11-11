@@ -5,6 +5,11 @@ const GiangTest = () => {
 
     const configs = {
         sliderPerRow: 3,
+        sliderPerRowMobile: 2.5,
+        allowDrag: true,
+        duration: 400,
+        auto: false,
+        autoDuration: 1000
     }
 
     return (
