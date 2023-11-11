@@ -1,3 +1,4 @@
+@use 'variables' as v;
 .destination-banner{
   .destination-content{
     top: 25%;
@@ -12,8 +13,8 @@
 }
 .destination-title{
   padding: 20px 0;
-  border-bottom: 1px solid #DFE3EA;
-  border-top: 1px solid #DFE3EA;
+  border-bottom: 1px solid v.$border2_color;
+  border-top: 1px solid v.$border2_color;
 }
 .all-destination-cate{
   .destination-cate{

@@ -65,10 +65,19 @@ $small_text: 12px;
   line-height: $small_text*1.5;
 }
 //Button
+.my-out-line-btn{
+  border: 1px solid v.$primary_color;
+  padding: 8px 32px;
+  text-transform: uppercase;
+}
+.my-out-line-btn:hover{
+  background: rgba(v.$primary_color, 0.1);
+}
 .my-btn-pr{
   background: v.$primary_color;
   color: #fff;
   padding: 8px 32px;
+  text-transform: uppercase
 }
 .my-btn-pr:hover{
   background: #19202B;
@@ -150,7 +159,7 @@ body{
     .search-here{
       border-bottom: 1px solid v.$border_color;
       .grid{
-        height: 68px;
+        height: 69px;
         .close-search{
           align-self: center;
           display: flex;

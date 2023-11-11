@@ -41,46 +41,130 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="what-we-do">
-                <div className="grid grid-cols-12 gap-4">
-                    <div className="col-span-12 md:col-span-4 we-do">
-                        <div>
-                            <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
-                        </div>
-                        <div className="heading_5 my-2">
-                            Making My Passion
-                        </div>
-                        <div>
-                            Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
-                            vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.
+            {/*What we do new*/}
+            <div className="wedo-new">
+                <div className="grid grid-cols-12 gap-5">
+                    <div className="col-span-4">
+                        <div className="heading_4 mb-3">What we do</div>
+                        <div>Are you interested in collaborating? Do you want to be a part of us? Join with us now!</div>
+                        <div className="mt-4">
+                            <button className="w-full my-out-line-btn" type="submit">Join with us</button>
                         </div>
                     </div>
-                    <div className="col-span-12 md:col-span-4 we-do">
-                        <div>
-                            <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
+                    <div className="col-span-8 wedo-first">
+                        <div className="grid grid-cols-8">
+                            <div className="col-span-4">
+                                <div className="we-do-card p-4 mb-4 mx-3">
+                                    <div>
+                                        <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
+                                    </div>
+                                    <div className="">
+                                        <div className="heading_5 my-2">
+                                            Making My Passion
+                                        </div>
+                                        <div>
+                                            Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
+                                            vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-span-4">
+                                <div className="we-do-card card-right p-4 ml-3">
+                                    <div>
+                                        <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
+                                    </div>
+                                    <div className="">
+                                        <div className="heading_5 my-2">
+                                            Making My Passion
+                                        </div>
+                                        <div>
+                                            Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
+                                            vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="heading_5 my-2">
-                            Sharing All Destinations
-                        </div>
-                        <div>
-                            Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
-                            vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.
-                        </div>
-                    </div>
-                    <div className="col-span-12 md:col-span-4 we-do">
-                        <div>
-                            <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
-                        </div>
-                        <div className="heading_5 my-2">
-                            Connect With You
-                        </div>
-                        <div>
-                            Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
-                            vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.
+                        <div className="decor-line mx-3 mb-4"></div>
+                        <div className="grid grid-cols-8">
+                            <div className="col-span-4">
+                                <div className="we-do-card p-4 mb-4 mx-3">
+                                    <div>
+                                        <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
+                                    </div>
+                                    <div className="">
+                                        <div className="heading_5 my-2">
+                                            Making My Passion
+                                        </div>
+                                        <div>
+                                            Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
+                                            vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-span-4">
+                                <div className="we-do-card card-right p-4 ml-3">
+                                    <div>
+                                        <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
+                                    </div>
+                                    <div className="">
+                                        <div className="heading_5 my-2">
+                                            Making My Passion
+                                        </div>
+                                        <div>
+                                            Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
+                                            vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            {/*What we do old*/}
+            {/*<div className="what-we-do">*/}
+            {/*    <div className="grid grid-cols-12 gap-4">*/}
+            {/*        <div className="col-span-12 md:col-span-4 we-do">*/}
+            {/*            <div>*/}
+            {/*                <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>*/}
+            {/*            </div>*/}
+            {/*            <div className="heading_5 my-2">*/}
+            {/*                Making My Passion*/}
+            {/*            </div>*/}
+            {/*            <div>*/}
+            {/*                Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque*/}
+            {/*                vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <div className="col-span-12 md:col-span-4 we-do">*/}
+            {/*            <div>*/}
+            {/*                <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>*/}
+            {/*            </div>*/}
+            {/*            <div className="heading_5 my-2">*/}
+            {/*                Sharing All Destinations*/}
+            {/*            </div>*/}
+            {/*            <div>*/}
+            {/*                Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque*/}
+            {/*                vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*        <div className="col-span-12 md:col-span-4 we-do">*/}
+            {/*            <div>*/}
+            {/*                <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>*/}
+            {/*            </div>*/}
+            {/*            <div className="heading_5 my-2">*/}
+            {/*                Connect With You*/}
+            {/*            </div>*/}
+            {/*            <div>*/}
+            {/*                Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque*/}
+            {/*                vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in.*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
             <div className="about-blog">
                 <div className="grid grid-cols-12 about-blog-inner flex gap-4">
                     <div className="col-span-12 md:col-span-6 about-content m-auto md:p-5">

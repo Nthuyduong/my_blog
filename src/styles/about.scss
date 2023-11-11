@@ -1,8 +1,9 @@
+@use 'variables' as v;
+
 .about-banner{
   padding-bottom: 60px;
-  border-bottom: 1px solid #DFE3EA;
+  border-bottom: 1px solid v.$border2_color;
 }
-
 .about-intro{
   padding-top: 60px;
   .intro-decor{
@@ -11,48 +12,47 @@
   .intro-inner{
     padding-top: 60px;
     .intro-content{
-
     }
   }
 }
 .about-me{
   margin-top: 60px;
   margin-bottom: 60px;
-  border-top: 1px solid #DFE3EA;
-  border-bottom: 1px solid #DFE3EA;
+  border-top: 1px solid v.$border2_color;
+  border-bottom: 1px solid v.$border2_color;
   padding-top: 60px;
   padding-bottom: 60px;
   .about-right{
     .about-content{
-      background-color: #DFE3EA;
+      background-color: v.$border_color;
       padding: 50px 50px;
     }
   }
 }
 .what-we-do{
   padding-bottom: 60px;
-  border-bottom: 1px solid #DFE3EA;
+  border-bottom: 1px solid v.$border2_color;
   .we-do{
-    border: 1px solid #DFE3EA;
+    border: 1px solid v.$border2_color;
     padding: 24px;
   }
 }
 .about-blog{
   padding-top: 60px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #DFE3EA;
+  border-bottom: 1px solid v.$border2_color;
 
 }
 .blog-mission{
   padding-top: 60px;
   padding-bottom: 60px;
-  border-bottom: 1px solid #DFE3EA;
+
 }
 .contact-me{
-  background-color: #DFE3EA;
+  background-color: v.$border_color;
   padding: 100px;
   .contact-me-inner{
-    background-color: #fff;
+    background-color: v.$bg_color;
     padding: 60px;
   }
 }
@@ -62,5 +62,22 @@
     input{
       padding: 8px 4px;
     }
+  }
+}
+
+//we do new
+.wedo-new{
+  padding-bottom: 60px;
+  border-bottom: 1px solid v.$border2_color;
+  .wedo-first{
+    border-left: 1px solid v.$border2_color;
+  }
+  .decor-line{
+    height: 1px;
+    background-color: v.$border2_color;
+  }
+  .card-right{
+    border-left: 1px solid v.$border2_color;
+    border-right: 1px solid v.$border2_color;
   }
 }
