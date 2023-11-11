@@ -17,76 +17,109 @@ const Slider = ({
         autoDuration: 1000
     }
 
+    // toán tử spread (...) để tạo một bản sao của tất cả các thuộc tính trong đối tượng defaultConfigs
+    // Thuộc tính configs cùng tên sẽ ghi đè thuộc tính defaultConfigs
     configs = { ...defaultConfigs, ...configs }
 
+    //Khai báo các biến với giá trị ban đầu bằng 0
     const [active, setActive] = useState(0);
     const [dragX, setDragX] = useState(0);
+    //khai báo biến trạng thái của hai nút
     const [disableNext, setDisableNext] = useState(false);
     const [disablePrev, setDisablePrev] = useState(true);
 
+    //Theo dõi kích thước width + height của trình duyệt, nếu có thay đổi thì dimensions được thay bằng setDimension
     const [dimensions, setDimensions] = React.useState({
         width: window.innerWidth,
         height: window.innerHeight,
     });
 
+    //API children (module trong React): thành phần con của một thành phần (component)
     const countChildren = Children.count(children);
 
     const autoSlideTimeout = useRef(null);
-   
+
+    //Nếu độ rộng của trình duyệt > 768 => sliderPerRow = sliderPerRow (3) còn không thì sẽ là sliderPerMobile (2.5)
+    //dùng configs để ghi đè giá trị tương ứng của defaultConfigs
     let sliderPerRow = window.innerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
+    //Tính toán số lượng slide tối đa có thể di  (tổng số slide - số slide hiển thị/ row)
     let maxSlide = countChildren - sliderPerRow;
+
+    //giá trị trong hàm callback (active, dragX) thay đổi thì hàm callback sẽ được gọi tới
     useEffect(() => {
         runSlider();
     }, [active, dragX])
 
     useEffect(() => {
+        //sự kiến lắng nghe để biết nếu cửa sổ trình duyệt resize thì hàm handleResize sẽ được gọi tới
         window.addEventListener('resize', handleResize);
 
+        //loại bỏ sử kiện, lý do thì chưa biết
         return () => window.removeEventListener('resize', handleResize, false);
     }, [])
 
+    //hàm handleResize
     const handleResize = () => {
         console.log('resize');
 
+        // cập nhật kích thước trình duyệt
         setDimensions({
             width: window.innerWidth,
             height: window.innerHeight,
         });
-        
+
+        //tính số lượng slide sẽ hiển thị trên một hàng, cách tính như ở trên
+        //configs ghi đè thuộc tính của defaultConfigs width trình duyệt > 768
         sliderPerRow = window.innerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
         maxSlide = countChildren - sliderPerRow;
         runSlider();
     }
+
+    //hàm run slider
     const runSlider = () => {
         console.log('run slider');
+
+        // cập nhật trạng thái disableNext và Prev
         setDisableNext(false);
         setDisablePrev(false);
+
+        // Kiểm tra nếu đang ở slide đầu tiên, vô hiệu hóa nút Prev
         if (active === 0) {
             setDisablePrev(true);
         }
+        // Kiểm tra nếu đang ở slide cuối cùng, vô hiệu hóa nút Next
         if (active >= maxSlide) {
             setDisableNext(true);
         }
 
+        // Cập nhật chiều rộng của slider container
         ref.current.style.width = (countChildren / sliderPerRow) * 100 + '%';
+        // Tính toán và cập nhật giá trị transformX để di chuyển slider
         let transformX = active * 100 / countChildren;
         if (transformX > (100 / countChildren) * maxSlide) {
             transformX = (100 / countChildren) * maxSlide
         }
+        // Cập nhật style của slider container với hiệu ứng transition
         ref.current.style.transition = `transform var(--transition-duration) cubic-bezier(0.645, 0.045, 0.355, 1) 0s${
             dragX
               ? ""
               : ", margin var(--transition-duration) cubic-bezier(0.645, 0.045, 0.355, 1) 0s"
           }`
+        // Di chuyển slider bằng cách thiết lập giá trị transform
         ref.current.style.transform = `translateX(-${transformX}%)`;
+
+        //nếu cho phép drag, cập nhật giá trị margin-left
         if (configs.allowDrag) {
             ref.current.style.marginLeft = dragX + 'px';
         }
 
+        //nếu có auto slide thì thiết lập timeout
         if (configs.auto) {
             autoSlideTimeout.current = setTimeout(() => {
+                //nếu active < số slide còn lại -> cập nhật giá trị active bằng setactive (active + 1)
                 if (active < maxSlide) {
                     setActive(active + 1);
+
                 } else {
                     setActive(0);
                 }
@@ -94,6 +127,7 @@ const Slider = ({
         }
     }
 
+    //
     const nextSlide = () => {
         if (active < maxSlide) {
             setActive(active + 1);

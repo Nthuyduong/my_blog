@@ -45,16 +45,18 @@ const About = () => {
             <div className="wedo-new">
                 <div className="grid grid-cols-12 gap-5">
                     <div className="col-span-4">
-                        <div className="heading_4 mb-3">What we do</div>
-                        <div>Are you interested in collaborating? Do you want to be a part of us? Join with us now!</div>
-                        <div className="mt-4">
-                            <button className="w-full my-out-line-btn" type="submit">Join with us</button>
+                        <div className="pr-5">
+                            <div className="heading_3 mb-3">What we do</div>
+                            <div>Are you interested in collaborating? Do you want to be a part of us? Join with us now!</div>
+                            <div className="mt-4">
+                                <button className="w-full my-out-line-btn" type="submit">Join with us</button>
+                            </div>
                         </div>
                     </div>
                     <div className="col-span-8 wedo-first">
                         <div className="grid grid-cols-8">
                             <div className="col-span-4">
-                                <div className="we-do-card p-4 mb-4 mx-3">
+                                <div className="we-do-card px-4 mb-4 mx-3">
                                     <div>
                                         <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                                     </div>
@@ -70,13 +72,13 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="col-span-4">
-                                <div className="we-do-card card-right p-4 ml-3">
+                                <div className="we-do-card card-right px-4 ml-3">
                                     <div>
                                         <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                                     </div>
                                     <div className="">
                                         <div className="heading_5 my-2">
-                                            Making My Passion
+                                            Sharing Destinations
                                         </div>
                                         <div>
                                             Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
@@ -89,13 +91,13 @@ const About = () => {
                         <div className="decor-line mx-3 mb-4"></div>
                         <div className="grid grid-cols-8">
                             <div className="col-span-4">
-                                <div className="we-do-card p-4 mb-4 mx-3">
+                                <div className="we-do-card px-4 mb-4 mx-3">
                                     <div>
                                         <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                                     </div>
                                     <div className="">
                                         <div className="heading_5 my-2">
-                                            Making My Passion
+                                            Connect People
                                         </div>
                                         <div>
                                             Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque
@@ -105,7 +107,7 @@ const About = () => {
                                 </div>
                             </div>
                             <div className="col-span-4">
-                                <div className="we-do-card card-right p-4 ml-3">
+                                <div className="we-do-card card-right px-4 ml-3">
                                     <div>
                                         <img className="" src="./img/about/do.svg" alt="smile" loading="lazy"/>
                                     </div>
