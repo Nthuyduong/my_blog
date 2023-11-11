@@ -1,8 +1,9 @@
+@use 'variables' as v;
 .recently-update{
   padding-top: 100px;
 }
 .article-info{
-  border-bottom: 1px solid #DFE3EA;
+  border-bottom: 1px solid v.$border_color;
 }
 .category-destination{
   padding-top: 100px;
@@ -29,7 +30,7 @@
   position: relative;
   height: 430px;
   //padding: 140px 40px;
-  background-color: #DFE3EA;
+  background-color: v.$secondary_color;
   .contact-inner{
     position: absolute;
     top: 45%;

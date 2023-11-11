@@ -47,7 +47,7 @@ const Header = () => {
                             <div className="col-span-2 close-search">
                                 <button type="button"
                                         onClick={toggleVisibility}
-                                        className="relative rounded-full bg-gray-800 p-1 text-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                        className="relative rounded-full bg-gray-800 p-1 text-gray-400 focus:outline-none">
                                     <img className="icon-ssm" src="./img/icon/x.svg" alt="smile" loading="lazy"/>
                                 </button>
                             </div>
@@ -125,18 +125,18 @@ const Header = () => {
                                          alt="Your Company"/>
                                 </div>
                             </div>
-                            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                            <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <div className="flex">
                                     <div>
                                         <button type="button"
                                                 onClick={toggleVisibility}
-                                                className="relative rounded-full bg-gray-800 p-1 text-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                                className="relative rounded-full bg-gray-800 p-1 text-gray-400 focus:outline-none">
                                             <img className="icon-ssm" src="./img/icon/search.svg" alt="smile" loading="lazy"/>
                                         </button>
                                     </div>
                                     <div>
                                         <button type="button"
-                                                className="relative rounded-full bg-gray-800 p-1 text-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                                                className="relative rounded-full bg-gray-800 p-1 text-gray-400 focus:outline-none">
                                             <img className="icon-ssm" src="./img/icon/heart.svg" alt="smile" loading="lazy"/>
                                         </button>
                                     </div>
