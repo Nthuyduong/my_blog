@@ -86,17 +86,21 @@ const Header = () => {
                                 <div className="hidden sm:ml-0 md:ml-0 sm:block">
                                     <div className="flex space-x-4">
                                         {/*Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"*/}
-                                        <div className="bg-gray-900 rounded-md pr-4 py-4 text-sm font-medium">
-                                            <Link to={ROUTER.HOME} className="nav-link">Home</Link>
+                                        <div className="bg-gray-900 rounded-md pr-3 py-4">
+                                            <Link to={ROUTER.HOME} className="nav-link">HOME</Link>
                                         </div>
-                                        <div className="text-gray-300 hover:text-gray rounded-md pr-4 py-4 text-sm font-medium">
-                                            <Link to={ROUTER.ABOUT} className="nav-link">About</Link>
+                                        <div className="text-gray-300 hover:text-gray rounded-md pr-3 py-4">
+                                            <Link to={ROUTER.ABOUT} className="nav-link">ABOUT US</Link>
                                         </div>
                                         <div className="relative destination-navdrop">
-                                            <div className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-4 py-4 text-sm font-medium">
-                                                <Link to={ROUTER.DESTINATION} className="nav-link">Destination</Link>
+                                            <div className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-3 py-4">
+                                                <Link to={ROUTER.DESTINATION} className="flex nav-link">DESTINATIONS
+                                                    <span className="ml-1">
+                                                        <img className="icon-ssm" src="./img/icon/chevron-down-black.svg" alt="smile" loading="lazy"/>
+                                                    </span>
+                                                </Link>
                                             </div>
-                                            <div className="navdrop-inner absolute left-30 w-48 rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                            <div className="navdrop-inner absolute left-30 w-48 py-1">
                                                 <div className="block px-4 py-2 text-sm text-gray-700">
                                                     <Link to={ROUTER.ABOUT} className="nav-link">Drink & Coffee</Link>
                                                 </div>
@@ -114,8 +118,8 @@ const Header = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="rounded-md pr-4 py-4 text-sm font-medium">
-                                            <Link to={ROUTER.GALLERY} className="nav-link">Gallery</Link>
+                                        <div className="rounded-md pr-4 py-4">
+                                            <Link to={ROUTER.GALLERY} className="nav-link">GALLERY</Link>
                                         </div>
                                     </div>
                                 </div>

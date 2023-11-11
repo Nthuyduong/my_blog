@@ -93,10 +93,12 @@ $small_text: 12px;
 //input style
 .my-input{
   border: 1px solid v.$secondary_color;
-  background: transparent;
+  input{
+    background: transparent;
+  }
 }
 input:focus-visible{
-  outline: v.$primary_color solid 1px;
+  outline: v.$subcolor2 solid 1px;
 }
 .nav-search{
   border: none !important;
@@ -189,6 +191,10 @@ body{
     .navdrop-inner{
       display: none;
       width: max-content;
+      background: v.$bg_color;
+      border-left: 1px solid v.$border_color;
+      border-right: 1px solid v.$border_color;
+      border-bottom: 1px solid v.$border_color;
     }
   }
   .destination-navdrop:hover .navdrop-inner{
