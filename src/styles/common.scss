@@ -21,10 +21,11 @@
         .btn-disable {
             opacity: 0.5;
         }
-        @media (max-width: 768px) {
-            .prev-button, .next-button {
-                opacity: 1;
-            }
+        
+    }
+    @media (max-width: 768px) {
+        .slider-control {
+            opacity: 1;
         }
     }
     

@@ -24,18 +24,41 @@ const Slider = ({
     const [disableNext, setDisableNext] = useState(false);
     const [disablePrev, setDisablePrev] = useState(true);
 
+    const [dimensions, setDimensions] = React.useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+
     const countChildren = Children.count(children);
 
     const autoSlideTimeout = useRef(null);
    
     let sliderPerRow = window.innerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
-    const maxSlide = countChildren - sliderPerRow;
+    let maxSlide = countChildren - sliderPerRow;
     useEffect(() => {
         runSlider();
     }, [active, dragX])
 
-    
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize, false);
+    }, [])
+
+    const handleResize = () => {
+        console.log('resize');
+
+        setDimensions({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        });
+        
+        sliderPerRow = window.innerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
+        maxSlide = countChildren - sliderPerRow;
+        runSlider();
+    }
     const runSlider = () => {
+        console.log('run slider');
         setDisableNext(false);
         setDisablePrev(false);
         if (active === 0) {
