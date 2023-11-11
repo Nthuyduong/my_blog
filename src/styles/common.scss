@@ -21,6 +21,12 @@
         .btn-disable {
             opacity: 0.5;
         }
+        
+    }
+    @media (max-width: 768px) {
+        .slider-control {
+            opacity: 1;
+        }
     }
     
 }

@@ -6,11 +6,15 @@ const Slider = ({
 }) => {
     
     const ref = useRef(null);
+    const refWrp = useRef(null);
 
     const defaultConfigs = {
-        sliderPerRow: 1,
+        sliderPerRow: 3,
+        sliderPerRowMobile: 2.5,
         allowDrag: true,
         duration: 400,
+        auto: false,
+        autoDuration: 1000
     }
 
     configs = { ...defaultConfigs, ...configs }
@@ -20,15 +24,41 @@ const Slider = ({
     const [disableNext, setDisableNext] = useState(false);
     const [disablePrev, setDisablePrev] = useState(true);
 
+    const [dimensions, setDimensions] = React.useState({
+        width: window.innerWidth,
+        height: window.innerHeight,
+    });
+
     const countChildren = Children.count(children);
 
-    const maxSlide = countChildren - configs.sliderPerRow;
-
+    const autoSlideTimeout = useRef(null);
+   
+    let sliderPerRow = window.innerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
+    let maxSlide = countChildren - sliderPerRow;
     useEffect(() => {
         runSlider();
     }, [active, dragX])
-    
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize, false);
+    }, [])
+
+    const handleResize = () => {
+        console.log('resize');
+
+        setDimensions({
+            width: window.innerWidth,
+            height: window.innerHeight,
+        });
+        
+        sliderPerRow = window.innerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
+        maxSlide = countChildren - sliderPerRow;
+        runSlider();
+    }
     const runSlider = () => {
+        console.log('run slider');
         setDisableNext(false);
         setDisablePrev(false);
         if (active === 0) {
@@ -37,7 +67,8 @@ const Slider = ({
         if (active >= maxSlide) {
             setDisableNext(true);
         }
-        
+
+        ref.current.style.width = (countChildren / sliderPerRow) * 100 + '%';
         let transformX = active * 100 / countChildren;
         if (transformX > (100 / countChildren) * maxSlide) {
             transformX = (100 / countChildren) * maxSlide
@@ -51,6 +82,16 @@ const Slider = ({
         if (configs.allowDrag) {
             ref.current.style.marginLeft = dragX + 'px';
         }
+
+        if (configs.auto) {
+            autoSlideTimeout.current = setTimeout(() => {
+                if (active < maxSlide) {
+                    setActive(active + 1);
+                } else {
+                    setActive(0);
+                }
+            }, configs.autoDuration)
+        }
     }
 
     const nextSlide = () => {
@@ -60,7 +101,6 @@ const Slider = ({
     }
 
     const prevSlide = () => {
-        console.log(active)
         if (active > 0) {
             setActive(active - 1);
         }
@@ -88,17 +128,8 @@ const Slider = ({
             if (
                 Math.abs(draxTemp) > window.innerWidth * 0.1
             ) {
-                let step = ref.current.offsetWidth / Math.abs(draxTemp) * maxSlide;
-                console.log(draxTemp, ref.current.offsetWidth, step)
-                if (step > 0.5 && step < 1) {
-                    step = 1;
-                } else if (step > countChildren + configs.sliderPerRow - 0.5) {
-                    step = 1;
-                } else if (step < 0.5) {
-                    step = 0;
-                } else {
-                    step = Math.round(step);
-                }
+                let step = Math.round(Math.abs(draxTemp) / refWrp.current.offsetWidth * configs.sliderPerRow);
+
                 if (draxTemp > 0) {
                     changeSlide(active - (step));
                 } else {
@@ -123,6 +154,7 @@ const Slider = ({
             className="slider-wrp"
             onMouseDown={startDrag}
             onTouchStart={startDrag}
+            ref={refWrp}
         >
             {maxSlide}
             <div 
