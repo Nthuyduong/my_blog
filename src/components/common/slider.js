@@ -169,7 +169,6 @@ const Slider = ({
                 } else {
                     changeSlide(active + (step));
                 }
-                
             }
             setDragX(0);
             document.removeEventListener('mousemove', onMoving);
@@ -184,14 +183,14 @@ const Slider = ({
     }
 
     return (
-        <div 
+        <div
             className="slider-wrp"
             onMouseDown={startDrag}
             onTouchStart={startDrag}
             ref={refWrp}
         >
             {maxSlide}
-            <div 
+            <div
                 className="slider-items"
                 ref={ref}
                 style={{ width: `${(countChildren / configs.sliderPerRow) * 100}%`, "--transition-duration": `${configs.duration ?? 400}ms` }}
@@ -214,7 +213,7 @@ const Slider = ({
                     </button>
                 </div>
             </div>
-            
+
         </div>
     )
 }
