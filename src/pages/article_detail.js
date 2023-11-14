@@ -8,7 +8,7 @@ const Article = () => {
                     <div className="col-span-8">
                         <div className="main-article">
                             {/*pagination*/}
-                            <div>
+                            <div className="mb-2">
                                 <ul className="flex">
                                     <li><a href="#">Home</a></li>
                                     <li className="mx-2">/</li>
@@ -18,7 +18,7 @@ const Article = () => {
                                 </ul>
                             </div>
                             {/*author and more information*/}
-                            <div className="my-2">
+                            <div className="my-2 sub-main-article py-2">
                                 <div className="flex">
                                     <div className="flex">
                                         <div>By Nthduong</div>
@@ -32,10 +32,15 @@ const Article = () => {
                                     <div className="ml-auto">About 10 minutes read</div>
                                 </div>
                             </div>
-                            <div className="heading_2 mb-4">
+                            <div className="heading_2 mb-5 pb-5 article-title">
                                 Vietnam With Kids: 6 Best Vietnam Family Holiday Destinations + Travel Tips
                             </div>
                             <div className="article-content">
+                                <div className="mb-2 font-medium">
+                                    Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit
+                                    consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque
+                                    sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
+                                </div>
                                 <div>
                                     Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
                                     Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus.
