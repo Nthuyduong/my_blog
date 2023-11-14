@@ -102,19 +102,19 @@ const Header = () => {
                                             </div>
                                             <div className="navdrop-inner absolute left-30 w-48 py-1">
                                                 <div className="block px-4 py-2 text-sm text-gray-700">
-                                                    <Link to={ROUTER.ABOUT} className="nav-link">Drink & Coffee</Link>
+                                                    <Link to={ROUTER.SUBDES} className="nav-link">Drink & Coffee</Link>
                                                 </div>
                                                 <div className="block px-4 py-2 text-sm text-gray-700">
-                                                    <Link to={ROUTER.ABOUT} className="nav-link">Food & Cake</Link>
+                                                    <Link to={ROUTER.SUBDES} className="nav-link">Food & Cake</Link>
                                                 </div>
                                                 <div className="block px-4 py-2 text-sm text-gray-700">
-                                                    <Link to={ROUTER.ABOUT} className="nav-link">Music & Art</Link>
+                                                    <Link to={ROUTER.SUBDES} className="nav-link">Music & Art</Link>
                                                 </div>
                                                 <div className="block px-4 py-2 text-sm text-gray-700">
-                                                    <Link to={ROUTER.ABOUT} className="nav-link">Learn & Work</Link>
+                                                    <Link to={ROUTER.SUBDES} className="nav-link">Learn & Work</Link>
                                                 </div>
                                                 <div className="block px-4 py-2 text-sm text-gray-700">
-                                                    <Link to={ROUTER.ABOUT} className="nav-link">Photo Spots</Link>
+                                                    <Link to={ROUTER.SUBDES} className="nav-link">Photo Spots</Link>
                                                 </div>
                                             </div>
                                         </div>

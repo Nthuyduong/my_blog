@@ -4,11 +4,11 @@ const Gallery = () => {
     return (
         <div>
             <div className="container-fluid">
-                <div className="destination-banner relative">
+                <div className="gallery-banner relative">
                     <div className="banner-img">
                         <img className="w-full" src="./img/destination/banner.jpg" alt="smile" loading="lazy"/>
                     </div>
-                    <div className="text-center absolute destination-content text-white">
+                    <div className="text-center absolute gallery-content text-white">
                         <div>
                             <div className="heading_2">My Gallery Images Spacing</div>
                             <div className="flex justify-center mt-3">

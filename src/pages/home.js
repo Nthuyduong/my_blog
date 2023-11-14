@@ -321,7 +321,22 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="category-destination">
-                    <div className="heading_3 mb-5 text-center">Popular Destinations</div>
+                    <div className="destination-title mb-5">
+                        <div className="flex justify-center">
+                            {/*breadcrumb*/}
+                            <div className="flex self-center">
+                                <div className="heading_3">Popular Destinations</div>
+                            </div>
+                            {/*Change layout*/}
+                            <div className="self-center flex ml-auto">
+                                <a href="">View all</a>
+                                <div className="ml-1">
+                                    <img className="icon-ssm" src="./img/icon/arrow-right-black.svg" alt="#" loading="lazy"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="grid grid-cols-4 gap-4">
                         <div className="col-span-4 md:col-span-2 relative h-popular-des-ct rounded-md">
                             <div className="des-ct-img">
@@ -365,48 +380,48 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-4 md:col-span-2 relative h-popular-des-ct rounded-md">
-                            <div className="des-ct-img">
-                                <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
-                            </div>
-                            <div className="absolute text-white category-des-content">
-                                <div className="heading_4 text-center">Drink & Coffee</div>
-                                <div className="flex justify-center mt-2">
-                                    <div className="flex article-count pr-3">
-                                        <div className="pr-1">
-                                            icon
-                                        </div>
-                                        <div>10 Blogs Article</div>
-                                    </div>
-                                    <div className="flex location-count pl-3">
-                                        <div className="pr-1">
-                                            <img className="icon-sm" src="./img/icon/map-pin.svg" alt="smile" loading="lazy"/>
-                                        </div>
-                                        <div>20 Location</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-span-4 md:col-span-2 relative h-popular-des-ct rounded-md">
-                            <div className="des-ct-img">
-                                <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
-                            </div>
-                            <div className="absolute text-white category-des-content">
-                                <div className="heading_4 text-center">Drink & Coffee</div>
-                                <div className="flex justify-center mt-2">
-                                    <div className="flex article-count pr-3">
-                                        <div className="pr-1"></div>
-                                        <div>10 Blogs Article</div>
-                                    </div>
-                                    <div className="flex location-count pl-3">
-                                        <div className="pr-1">
-                                            <img className="icon-sm" src="./img/icon/map-pin.svg" alt="smile" loading="lazy"/>
-                                        </div>
-                                        <div>20 Location</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        {/*<div className="col-span-4 md:col-span-2 relative h-popular-des-ct rounded-md">*/}
+                        {/*    <div className="des-ct-img">*/}
+                        {/*        <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="absolute text-white category-des-content">*/}
+                        {/*        <div className="heading_4 text-center">Drink & Coffee</div>*/}
+                        {/*        <div className="flex justify-center mt-2">*/}
+                        {/*            <div className="flex article-count pr-3">*/}
+                        {/*                <div className="pr-1">*/}
+                        {/*                    icon*/}
+                        {/*                </div>*/}
+                        {/*                <div>10 Blogs Article</div>*/}
+                        {/*            </div>*/}
+                        {/*            <div className="flex location-count pl-3">*/}
+                        {/*                <div className="pr-1">*/}
+                        {/*                    <img className="icon-sm" src="./img/icon/map-pin.svg" alt="smile" loading="lazy"/>*/}
+                        {/*                </div>*/}
+                        {/*                <div>20 Location</div>*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
+                        {/*<div className="col-span-4 md:col-span-2 relative h-popular-des-ct rounded-md">*/}
+                        {/*    <div className="des-ct-img">*/}
+                        {/*        <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>*/}
+                        {/*    </div>*/}
+                        {/*    <div className="absolute text-white category-des-content">*/}
+                        {/*        <div className="heading_4 text-center">Drink & Coffee</div>*/}
+                        {/*        <div className="flex justify-center mt-2">*/}
+                        {/*            <div className="flex article-count pr-3">*/}
+                        {/*                <div className="pr-1"></div>*/}
+                        {/*                <div>10 Blogs Article</div>*/}
+                        {/*            </div>*/}
+                        {/*            <div className="flex location-count pl-3">*/}
+                        {/*                <div className="pr-1">*/}
+                        {/*                    <img className="icon-sm" src="./img/icon/map-pin.svg" alt="smile" loading="lazy"/>*/}
+                        {/*                </div>*/}
+                        {/*                <div>20 Location</div>*/}
+                        {/*            </div>*/}
+                        {/*        </div>*/}
+                        {/*    </div>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
                 <div className="p-100">
@@ -532,6 +547,29 @@ const Home = () => {
                     {/*        </div>*/}
                     {/*    </div>*/}
                     {/*</div>*/}
+                </div>
+                <div className="home-about">
+                    <div className="grid grid-cols-12 gap-4">
+                        <div className="col-span-8 py-6 about-intro">
+                            <div className="relative">
+                                <div className="heading_1">
+                                    “Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor.”
+                                </div>
+                                <div className="absolute heading_6 mt-auto">Hello & Welcome!</div>
+                            </div>
+                        </div>
+                        <div className="col-span-4 about-content py-6">
+                            <div>Tempus, tristique morbi scelerisque sed. Diam nec ut sed est sit in tortor. Blandit consequat
+                                quisque vitae ornare diam netus tellus. Tempus, tristique morbi scelerisque sed. Diam nec ut
+                                sed est sit in tortor. Blandit consequat quisque vitae ornare diam netus tellus. Diam nec ut sed est sit
+                                in tortor. Blandit consequat quisque vitae ornare.</div>
+                            <div className="mt-6">
+                                <Link to={ROUTER.ABOUT}>
+                                    <button className="my-out-line-btn" type="submit">MORE ABOUT ME</button>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="home-contact-me">
                     <div className="contact-inner">
