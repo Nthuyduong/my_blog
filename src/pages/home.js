@@ -10,7 +10,8 @@ const Home = () => {
         allowDrag: true,
         duration: 400,
         auto: false,
-        autoDuration: 1000
+        autoDuration: 1000,
+        gap: 20,
     }
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -124,11 +125,11 @@ const Home = () => {
                     <Slider
                         configs={configs}
                     >
-                        <div className="flex justify-center">
+                        <div className="justify-center">
                             <div className="col-span-12 md:col-span-4">
                                 <div>
                                     <Link to={ROUTER.ARTICLE}>
-                                        <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
                                     </Link>
                                 </div>
                                 <div>
@@ -146,11 +147,11 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="justify-center">
                             <div className="col-span-12 md:col-span-4">
                                 <div>
                                     <Link to={ROUTER.ARTICLE}>
-                                        <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
                                     </Link>
                                 </div>
                                 <div>
@@ -168,11 +169,11 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="justify-center">
                             <div className="col-span-12 md:col-span-4">
                                 <div>
                                     <Link to={ROUTER.ARTICLE}>
-                                        <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
                                     </Link>
                                 </div>
                                 <div>
@@ -190,11 +191,11 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="justify-center">
                             <div className="col-span-12 md:col-span-4">
                                 <div>
                                     <Link to={ROUTER.ARTICLE}>
-                                        <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
                                     </Link>
                                 </div>
                                 <div>
@@ -212,11 +213,11 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="justify-center">
                             <div className="col-span-12 md:col-span-4">
                                 <div>
                                     <Link to={ROUTER.ARTICLE}>
-                                        <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
                                     </Link>
                                 </div>
                                 <div>
@@ -234,11 +235,11 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center">
+                        <div className="justify-center">
                             <div className="col-span-12 md:col-span-4">
                                 <div>
                                     <Link to={ROUTER.ARTICLE}>
-                                        <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
                                     </Link>
                                 </div>
                                 <div>
