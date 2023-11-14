@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {ROUTER} from "../utils/constants";
 
 const Sub_destination = () => {
     return (
@@ -90,6 +92,64 @@ const Sub_destination = () => {
                                 <option value="">Oldest article</option>
                                 <option value="">Popular article</option>
                             </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container-fluid">
+                <div className="grid grid-cols-12 gap-4 recently-update-blog">
+                    <div className="col-span-12 md:col-span-3">
+                        <div>
+                            <Link to={ROUTER.ARTICLE}>
+                                <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                            </Link>
+                        </div>
+                        <div>
+                            <div className="py-1 mb-1">
+                                <div className="mb-1">
+                                    <div className="small_text">November 8, 2023</div>
+                                </div>
+                                <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-12 md:col-span-3">
+                        <div>
+                            <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                        </div>
+                        <div>
+                            <div className="py-1 mb-1">
+                                <div className="mb-1">
+                                    <div className="small_text">November 8, 2023</div>
+                                </div>
+                                <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-12 md:col-span-3">
+                        <div>
+                            <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                        </div>
+                        <div>
+                            <div className="py-1 mb-1">
+                                <div className="mb-1">
+                                    <div className="small_text">November 8, 2023</div>
+                                </div>
+                                <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-span-12 md:col-span-3">
+                        <div>
+                            <img className="w-100" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                        </div>
+                        <div>
+                            <div className="py-1 mb-1">
+                                <div className="mb-1">
+                                    <div className="small_text">November 8, 2023</div>
+                                </div>
+                                <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
+                            </div>
                         </div>
                     </div>
                 </div>
