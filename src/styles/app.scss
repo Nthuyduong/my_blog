@@ -220,6 +220,9 @@ body{
 //Footer
 #blog-footer{
   margin-top: 60px;
+  .sub-menu ul li:hover a{
+    color: #666;
+  }
 }
 .blog-footer{
   padding: 0 20px;
@@ -236,6 +239,7 @@ body{
     }
   }
 }
+
 @media only screen and (min-width: 768px) {
   .container-fluid{
     padding-left: 120px;

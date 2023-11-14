@@ -7,44 +7,51 @@ const Footer = () => {
         <div className="blog-footer" id="blog-footer">
             <div className="blog-footer-inner">
                 <div className="grid grid-cols-6 footer-popular">
-                    <div className="">
+                    <div className="sub-menu">
                         <div className="mb-3">Popular</div>
-                        <div>
-                            <Link to={ROUTER.HOME} className="nav-link">Weading Photo Spots</Link>
-                        </div>
-                        <div>
-                            <Link to={ROUTER.HOME} className="nav-link">Ceramic Handmade Shop</Link>
-                        </div>
-                        <div>
-                            <Link to={ROUTER.HOME} className="nav-link">National Library</Link>
-                        </div>
-                        <div>
-                            <Link to={ROUTER.HOME} className="nav-link">Gusto Chela Coffee</Link>
-                        </div>
+                        <ul>
+                            <li>
+                                <Link to={ROUTER.HOME} className="nav-link">Weading Photo Spots</Link>
+                            </li>
+                            <li>
+                                <Link to={ROUTER.HOME} className="nav-link">Ceramic Handmade Shop</Link>
+                            </li>
+                            <li>
+                                <Link to={ROUTER.HOME} className="nav-link">National Library</Link>
+                            </li>
+                            <li>
+                                <Link to={ROUTER.HOME} className="nav-link">Gusto Chela Coffee</Link>
+                            </li>
+
+                        </ul>
                     </div>
                     <div className="footer-info">
-                        <div>
+                        <div className="sub-menu">
                             <div className="mb-3">Infor</div>
-                            <div>
-                                <Link to={ROUTER.HOME} className="nav-link">About us</Link>
-                            </div>
-                            <div>
-                                <Link to={ROUTER.HOME} className="nav-link">Destinations</Link>
-                            </div>
-                            <div>
-                                <Link to={ROUTER.HOME} className="nav-link">Privacy Policy</Link>
-                            </div>
+                            <ul>
+                                <li>
+                                    <Link to={ROUTER.HOME} className="nav-link">About us</Link>
+                                </li>
+                                <li>
+                                    <Link to={ROUTER.HOME} className="nav-link">Destinations</Link>
+                                </li>
+                                <li>
+                                    <Link to={ROUTER.HOME} className="nav-link">Privacy Policy</Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div className="footer-contact">
-                        <div>
+                        <div className="sub-menu">
                             <div className="mb-3">Connect</div>
-                            <div>
-                                <Link to={ROUTER.HOME} className="nav-link">Contact me</Link>
-                            </div>
-                            <div>
-                                <Link to={ROUTER.HOME} className="nav-link">Work with me</Link>
-                            </div>
+                            <ul>
+                                <li>
+                                    <Link to={ROUTER.CONTACT} className="nav-link">Contact me</Link>
+                                </li>
+                                <li>
+                                    <Link to={ROUTER.HOME} className="nav-link">Work with me</Link>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div className=""></div>
@@ -69,9 +76,15 @@ const Footer = () => {
                     </div>
                     <div className="col-span-3">
                         <div className="my-social flex w-full">
-                            <div>Instagram</div>
-                            <div className="mx-3">Pinterest</div>
-                            <div>Behance</div>
+                            <div>
+                                <a href="#">Instagram</a>
+                            </div>
+                            <div className="mx-3">
+                                <a>Pinterest</a>
+                            </div>
+                            <div>
+                                <a>Behance</a>
+                            </div>
                         </div>
                     </div>
                 </div>
