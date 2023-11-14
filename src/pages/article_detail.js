@@ -103,7 +103,7 @@ const Article = () => {
                                 <div className="flex">
                                     <div className="flex">
                                         <div className="mr-2">
-                                            <img className="w-full" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
+                                            <img className="w-full rounded-3xl" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
                                         </div>
                                         <div>
                                             <div>3 days ago</div>
@@ -111,7 +111,7 @@ const Article = () => {
                                         </div>
                                     </div>
                                     <div className="flex ml-auto">
-                                        <div>10</div>
+                                        <div className="mr-2">10</div>
                                         <div>heart</div>
                                     </div>
                                 </div>
@@ -125,7 +125,7 @@ const Article = () => {
                                 <div className="flex">
                                     <div className="flex">
                                         <div className="mr-2">
-                                            <img className="w-full" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
+                                            <img className="w-full rounded-3xl" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
                                         </div>
                                         <div>
                                             <div>3 days ago</div>
@@ -133,7 +133,7 @@ const Article = () => {
                                         </div>
                                     </div>
                                     <div className="flex ml-auto">
-                                        <div>10</div>
+                                        <div className="mr-2">10</div>
                                         <div>heart</div>
                                     </div>
                                 </div>
@@ -147,7 +147,7 @@ const Article = () => {
                                 <div className="flex">
                                     <div className="flex">
                                         <div className="mr-2">
-                                            <img className="w-full" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
+                                            <img className="w-full rounded-3xl" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
                                         </div>
                                         <div>
                                             <div>3 days ago</div>
@@ -155,7 +155,7 @@ const Article = () => {
                                         </div>
                                     </div>
                                     <div className="flex ml-auto">
-                                        <div>10</div>
+                                        <div className="mr-2">10</div>
                                         <div>heart</div>
                                     </div>
                                 </div>
@@ -169,15 +169,15 @@ const Article = () => {
                                 <div className="flex">
                                     <div className="flex">
                                         <div className="mr-2">
-                                            <img className="w-full" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
+                                            <img className="w-full rounded-3xl" src="./img/article/avata.jpg" alt="smile" loading="lazy"/>
                                         </div>
                                         <div>
-                                            <div>3 days ago</div>
+                                            <div className="mr-2">3 days ago</div>
                                             <div className="medium_text">Nthuyduong</div>
                                         </div>
                                     </div>
                                     <div className="flex ml-auto">
-                                        <div>10</div>
+                                        <div >10</div>
                                         <div>heart</div>
                                     </div>
                                 </div>

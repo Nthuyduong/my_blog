@@ -6,7 +6,7 @@ const Search = () => {
     return (
         <div>
             <div className="container-fluid">
-                <div className="heading_2 text-center mb-4">Search Results for: Vietnam</div>
+                <div className="heading_2 text-center mb-4 pt-4">Search Results for: Vietnam</div>
                 <div className="grid grid-cols-12">
                     <div className="col-span-3"></div>
                     <div className="col-span-6">

@@ -106,11 +106,11 @@ $small_text: 12px;
   align-items: center;
 }
 //input style
+input{
+  background: transparent;
+}
 .my-input{
   border: 1px solid v.$border2_color;
-  input{
-    background: transparent;
-  }
 }
 input:focus-visible{
   outline: v.$subcolor2 solid 1px;
