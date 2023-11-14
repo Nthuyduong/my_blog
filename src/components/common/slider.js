@@ -8,13 +8,22 @@ const Slider = ({
     const ref = useRef(null);
     const refWrp = useRef(null);
 
+    // Giang note:
     const defaultConfigs = {
+        // Số lượng slide hiển thị trên một hàng
         sliderPerRow: 3,
+        // Số lượng slide hiển thị trên một hàng khi màn hình < 768px
         sliderPerRowMobile: 2.5,
+        // Cho phép kéo slide
         allowDrag: true,
+        // Thời gian chuyển động của slide
         duration: 400,
+        // Cho phép tự động chuyển slide
         auto: false,
-        autoDuration: 1000
+        // Thời gian chuyển động của slide
+        autoDuration: 1000,
+        // Khoảng cách giữa các slide
+        gap: 10
     }
 
     // toán tử spread (...) để tạo một bản sao của tất cả các thuộc tính trong đối tượng defaultConfigs
@@ -22,7 +31,9 @@ const Slider = ({
     configs = { ...defaultConfigs, ...configs }
 
     //Khai báo các biến với giá trị ban đầu bằng 0
+    //active: vị trí slide hiện tại
     const [active, setActive] = useState(0);
+    //dragX: giá trị margin-left của slider container
     const [dragX, setDragX] = useState(0);
     //khai báo biến trạng thái của hai nút
     const [disableNext, setDisableNext] = useState(false);
@@ -45,7 +56,7 @@ const Slider = ({
     //Tính toán số lượng slide tối đa có thể di  (tổng số slide - số slide hiển thị/ row)
     let maxSlide = countChildren - sliderPerRow;
 
-    //giá trị trong hàm callback (active, dragX) thay đổi thì hàm callback sẽ được gọi tới
+    //giá trị trong hàm callback (active, dragX) thay đổi thì hàm callback sẽ được gọi tới để kích hoạt hàm runSlider
     useEffect(() => {
         runSlider();
     }, [active, dragX])
@@ -96,6 +107,7 @@ const Slider = ({
         ref.current.style.width = (countChildren / sliderPerRow) * 100 + '%';
         // Tính toán và cập nhật giá trị transformX để di chuyển slider
         let transformX = active * 100 / countChildren;
+        // Nếu giá trị transformX vượt quá giới hạn thì cập nhật lại giá trị transformX bằng vị trí cuối cùng
         if (transformX > (100 / countChildren) * maxSlide) {
             transformX = (100 / countChildren) * maxSlide
         }
@@ -188,19 +200,24 @@ const Slider = ({
             onMouseDown={startDrag}
             onTouchStart={startDrag}
             ref={refWrp}
-        >
-            {maxSlide}
-            <div
-                className="slider-items"
-                ref={ref}
-                style={{ width: `${(countChildren / configs.sliderPerRow) * 100}%`, "--transition-duration": `${configs.duration ?? 400}ms` }}
-            >
-                {Children.map(children, (child, index) => {
-                    return cloneElement(child, {
-                        className: `slider-item ${child.props.className} ${active === index ? 'slide-active' : ''}`
-                    })
-                })}
+        >   <div className="overflow-hidden">
+                <div
+                    className="slider-items"
+                    ref={ref}
+                    style={{ 
+                        width: `${(countChildren / configs.sliderPerRow) * 100}%`, 
+                        "--transition-duration": `${configs.duration ?? 400}ms`,
+                        gap: `${configs.gap ?? 0}px`,
+                    }}
+                >
+                    {Children.map(children, (child, index) => {
+                        return cloneElement(child, {
+                            className: `slider-item ${child.props.className} ${active === index ? 'slide-active' : ''}`
+                        })
+                    })}
+                </div>
             </div>
+            
             <div className="slider-control">
                 <div className={`prev-button ${ disablePrev ? 'btn-disable': '' }`}>
                     <button className="my-prev-btn" onClick={prevSlide}>
