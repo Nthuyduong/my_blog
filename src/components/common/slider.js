@@ -8,21 +8,13 @@ const Slider = ({
     const ref = useRef(null);
     const refWrp = useRef(null);
 
-    // Giang note:
     const defaultConfigs = {
-        // Số lượng slide hiển thị trên một hàng
         sliderPerRow: 3,
-        // Số lượng slide hiển thị trên một hàng khi màn hình < 768px
         sliderPerRowMobile: 2.5,
-        // Cho phép kéo slide
         allowDrag: true,
-        // Thời gian chuyển động của slide
         duration: 400,
-        // Cho phép tự động chuyển slide
         auto: false,
-        // Thời gian chuyển động của slide
         autoDuration: 1000,
-        // Khoảng cách giữa các slide
         gap: 10
     }
 

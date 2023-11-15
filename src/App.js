@@ -16,16 +16,12 @@ import Contact from "./pages/contact";
 import Layout from "./components/layout";
 import Search from "./pages/search";
 
-//giangtest
-import Test from "./pages/giangtest";
-
 const App = () => {
   return (
     <Router>
       <Switch>
         <Layout>
           <Route exact path={ROUTER.HOME} component={Home}/>
-          <Route path={ROUTER.TEST} component={Test}/>
           <Route path={ROUTER.DESTINATION} component={Destination}/>
           <Route path={ROUTER.ARTICLE} component={Article}/>
           <Route path={ROUTER.SUBDES} component={Sub_destination}/>
