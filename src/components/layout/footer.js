@@ -8,12 +8,12 @@ const Footer = () => {
             <div className="blog-footer-inner">
                 <div className="grid grid-cols-6 footer-popular">
                     <div className="sub-menu">
-                        <div className="mb-3">Popular</div>
+                        <div className="mb-3">POPULAR</div>
                         <ul>
                             <li>
                                 <Link to={ROUTER.HOME} className="nav-link">Weading Photo Spots</Link>
                             </li>
-                            <li>
+                            <li className="">
                                 <Link to={ROUTER.HOME} className="nav-link">Ceramic Handmade Shop</Link>
                             </li>
                             <li>
@@ -27,29 +27,29 @@ const Footer = () => {
                     </div>
                     <div className="footer-info">
                         <div className="sub-menu">
-                            <div className="mb-3">Infor</div>
+                            <div className="mb-3">INTEREST</div>
                             <ul>
                                 <li>
-                                    <Link to={ROUTER.HOME} className="nav-link">About us</Link>
+                                    <Link to={ROUTER.ABOUT} className="nav-link">About us</Link>
                                 </li>
                                 <li>
-                                    <Link to={ROUTER.HOME} className="nav-link">Destinations</Link>
+                                    <Link to={ROUTER.DESTINATION} className="nav-link">Destinations</Link>
                                 </li>
                                 <li>
-                                    <Link to={ROUTER.HOME} className="nav-link">Privacy Policy</Link>
+                                    <Link to={ROUTER.GALLERY} className="nav-link">Our Gallery</Link>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div className="footer-contact">
                         <div className="sub-menu">
-                            <div className="mb-3">Connect</div>
+                            <div className="mb-3">INFO</div>
                             <ul>
                                 <li>
                                     <Link to={ROUTER.CONTACT} className="nav-link">Contact me</Link>
                                 </li>
                                 <li>
-                                    <Link to={ROUTER.HOME} className="nav-link">Work with me</Link>
+                                    <Link to={ROUTER.CONTACT} className="nav-link">Work with me</Link>
                                 </li>
                             </ul>
                         </div>

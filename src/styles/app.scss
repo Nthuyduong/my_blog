@@ -92,12 +92,13 @@ $small_text: 12px;
 
 //scroll to top btn
 .back-to-top {
+  z-index: 30000;
   color: #333;
   position: fixed;
   right: 40px;
   bottom: 8%;
   cursor: pointer;
-  border: 1px solid #ccc;
+  background: rgba(v.$border_color, 0.8);
   height: 50px;
   width: 50px;
   border-radius: 30px;
@@ -278,14 +279,28 @@ body{
 }
 
 //My carousel
-.carousel-component{
-  .next-button{
-    right:-40px;
-    top: 40%;
-  }
-  .prev-button{
-    left: -40px;
-    top: 40%;
+.slider-wrp{
+  .slider-control{
+    .next-button{
+      right:-40px;
+      top: 40%;
+      .my-next-btn{
+        width: 30px;
+        height: 30px;
+        background: v.$border_color;
+        border-radius: 40px;
+      }
+    }
+    .prev-button{
+      left: -40px;
+      top: 40%;
+      .my-prev-btn{
+        width: 30px;
+        height: 30px;
+        background: v.$border_color;
+        border-radius: 40px;
+      }
+    }
   }
 }
 

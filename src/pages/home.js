@@ -282,44 +282,44 @@ const Home = () => {
                     </div>
 
                     <div className="grid grid-cols-4 gap-4">
-                        <div className="col-span-4 md:col-span-2 relative h-popular-des-ct rounded-md">
-                            <div className="des-ct-img">
+                        <div className="col-span-4 md:col-span-2 h-popular-des-ct">
+                            <div className="des-ct-img overflow-hidden">
                                 <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
                             </div>
-                            <div className="absolute text-white category-des-content">
-                                <div className="heading_4 text-center">Drink & Coffee</div>
-                                <div className="flex justify-center mt-2">
-                                    <div className="flex article-count pr-3">
-                                        <div className="pr-1">icon</div>
-                                        <div>10 Blogs Article</div>
-                                    </div>
-                                    <div className="flex location-count pl-3">
-                                        <div className="pr-1">
-                                            <img className="icon-sm" src="./img/icon/map-pin.svg" alt="smile" loading="lazy"/>
+                            <div className="category-des-content">
+                                <div className="heading_4 top-destination-title py-3">Drink & Coffee</div>
+                                <div className="flex py-2 sub-title">
+                                    <div className="flex">
+                                        <div className="flex article-count pr-1">
+                                            <div>10 Blogs Article</div>
                                         </div>
-                                        <div>20 Location</div>
+                                        <div className="flex location-count pl-1">
+                                            <div>20 Location</div>
+                                        </div>
+                                    </div>
+                                    <div className="ml-auto">
+                                        <a className="text-link" href="#">View all</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-span-4 md:col-span-2 relative h-popular-des-ct rounded-md">
-                            <div className="des-ct-img">
+                        <div className="col-span-4 md:col-span-2 h-popular-des-ct">
+                            <div className="des-ct-img overflow-hidden">
                                 <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
                             </div>
-                            <div className="absolute text-white category-des-content">
-                                <div className="heading_4 text-center">Drink & Coffee</div>
-                                <div className="flex justify-center mt-2">
-                                    <div className="flex article-count pr-3">
-                                        <div className="pr-1">
-                                            icon
+                            <div className="category-des-content">
+                                <div className="heading_4 top-destination-title py-3">Drink & Coffee</div>
+                                <div className="flex py-2 sub-title">
+                                    <div className="flex">
+                                        <div className="flex article-count pr-1">
+                                            <div>10 Blogs Article</div>
                                         </div>
-                                        <div>10 Blogs Article</div>
+                                        <div className="flex location-count pl-1">
+                                            <div>20 Location</div>
+                                        </div>
                                     </div>
-                                    <div className="flex location-count pl-3">
-                                        <div className="pr-1">
-                                            <img className="icon-sm" src="./img/icon/map-pin.svg" alt="smile" loading="lazy"/>
-                                        </div>
-                                        <div>20 Location</div>
+                                    <div className="ml-auto">
+                                        <a className="text-link" href="#">View all</a>
                                     </div>
                                 </div>
                             </div>

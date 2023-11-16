@@ -3,7 +3,7 @@
   padding-top: 100px;
 }
 .article-info{
-  border-bottom: 1px solid v.$border_color;
+  border-bottom: 1px solid v.$border2_color;
 }
 .category-destination{
   padding-top: 100px;
@@ -12,17 +12,15 @@
     .category-des-content{
       top: 45%;
       right: 25%;
-      .article-count{
-        border-right: 1px solid #fff;
+      .top-destination-title{
+        border-bottom: 1px solid v.$border2_color;
       }
-    }
-    img{
-      transition: transform .25s ease;
-    }
-  }
-  .h-popular-des-ct:hover{
-    .des-ct-img img{
-      transform: scale(1.05);
+      .sub-title{
+        border-bottom: 1px solid v.$border2_color;
+      }
+      .article-count{
+        border-right: 1px solid v.$text_color;
+      }
     }
   }
 }

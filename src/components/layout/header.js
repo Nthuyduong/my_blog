@@ -119,7 +119,7 @@ const Header = () => {
                                             </div>
                                         </div>
                                         <div className="rounded-md pr-4 py-4">
-                                            <Link to={ROUTER.GALLERY} className="nav-link">GALLERY</Link>
+                                            <Link to={ROUTER.CONTACT} className="nav-link">CONTACT</Link>
                                         </div>
                                     </div>
                                 </div>
