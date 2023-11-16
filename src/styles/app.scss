@@ -91,7 +91,11 @@ $small_text: 12px;
 }
 
 //scroll to top btn
+.back-show{
+  display:flex !important;
+}
 .back-to-top {
+  display: none;
   z-index: 30000;
   color: #333;
   position: fixed;
@@ -102,7 +106,6 @@ $small_text: 12px;
   height: 50px;
   width: 50px;
   border-radius: 30px;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
