@@ -35,9 +35,9 @@ const App = () => {
           <Route path={ROUTER.GALLERY} component={Gallery}/>
           <Route path={ROUTER.SEARCH} component={Search}/>
           <Route path={ROUTER.ADDASHBOARD} component={admin_dashboard}/>
-          <Route path={ROUTER.ADLOGIN} component={admin_login()}/>
-          <Route path={ROUTER.ADPOST} component={admin_postpage()}/>
-          <Route path={ROUTER.ADCATEGORY} component={admin_category()}/>
+          <Route path={ROUTER.ADLOGIN} component={admin_login}/>
+          <Route path={ROUTER.ADPOST} component={admin_postpage}/>
+          <Route path={ROUTER.ADCATEGORY} component={admin_category}/>
         </Layout>
       </Switch>
     </Router>
