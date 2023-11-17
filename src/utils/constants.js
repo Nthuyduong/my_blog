@@ -8,4 +8,8 @@ export const ROUTER = {
     GALLERY: '/gallery',
     CONTACT: '/contact',
     SEARCH: '/search',
+    ADDASHBOARD: '/admin/dashboard',
+    ADPOST: '/admin/post',
+    ADCATEGORY: '/admin/category',
+    ADLOGIN: '/admin-login',
 }

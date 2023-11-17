@@ -15,6 +15,11 @@ import Gallery from "./pages/gallery";
 import Contact from "./pages/contact";
 import Layout from "./components/layout";
 import Search from "./pages/search";
+import admin_dashboard from "./pages/admin_dashboard";
+import admin_login from "./pages/admin_login";
+import admin_postpage from "./pages/admin_postpage";
+import admin_category from "./pages/admin_category";
+
 
 const App = () => {
   return (
@@ -29,7 +34,10 @@ const App = () => {
           <Route path={ROUTER.CONTACT} component={Contact}/>
           <Route path={ROUTER.GALLERY} component={Gallery}/>
           <Route path={ROUTER.SEARCH} component={Search}/>
-          
+          <Route path={ROUTER.ADDASHBOARD} component={admin_dashboard}/>
+          <Route path={ROUTER.ADLOGIN} component={admin_login()}/>
+          <Route path={ROUTER.ADPOST} component={admin_postpage()}/>
+          <Route path={ROUTER.ADCATEGORY} component={admin_category()}/>
         </Layout>
       </Switch>
     </Router>

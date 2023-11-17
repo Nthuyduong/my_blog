@@ -71,6 +71,7 @@ $small_text: 12px;
   line-height: $small_text*1.5;
 }
 //Button
+
 .my-out-line-btn{
   border: 1px solid v.$primary_color;
   padding: 8px 32px;
@@ -328,4 +329,29 @@ body{
 .text-link:hover:after{
   transform: scaleX(0);
   transform-origin: 100% 50%;
+}
+//SIDEBAR STYLE
+#sidebar{
+  color: #fff;
+  background: v.$primary_color;
+  .sidebar-title{
+    .logo{
+      font-size: 24px;
+    }
+  }
+  .sidebar-content{
+    ul li{
+      margin-bottom: 8px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .content-first{
+      border-bottom: 1px solid v.$border_color;
+    }
+  }
+  button{
+    bottom: 5%;
+    right: 0;
+    left: 0
+  }
 }
