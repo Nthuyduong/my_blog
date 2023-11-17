@@ -34,20 +34,20 @@ const Layout = ({ children }) => {
     const discardElement = [ROUTER.ADCATEGORY, ROUTER.ADPOST, ROUTER.ADLOGIN, ROUTER.ADDASHBOARD];
     const { pathname } = useLocation();
 
-    // const [show, setShow] = useState(false)
-    // //Change width of main page body
-    // const adminWrap = () => {
-    //     if (discardElement.some((route) => pathname.includes(route))) {
-    //         setShow(true)
-    //     }
-    //     else {
-    //         setShow(false);
-    //     }
-    // }
-    //
-    // useEffect(() => {
-    //     adminWrap();
-    // }, [pathname]);
+    const [show, setShow] = useState(false)
+    //Change width of main page body
+    const adminWrap = () => {
+        if (discardElement.some((route) => pathname.includes(route))) {
+            setShow(true)
+        }
+        else {
+            setShow(false);
+        }
+    }
+    
+    useEffect(() => {
+        adminWrap();
+    }, [pathname]);
 
     //hide header and footer from page layout
     if (discardElement.some((route) => pathname.includes(route))) {

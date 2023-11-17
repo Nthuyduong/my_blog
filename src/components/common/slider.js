@@ -15,7 +15,8 @@ const Slider = ({
         duration: 400,
         auto: false,
         autoDuration: 1000,
-        gap: 10
+        gap: 10,
+        gapMobile: 10,
     }
 
     // toán tử spread (...) để tạo một bản sao của tất cả các thuộc tính trong đối tượng defaultConfigs
@@ -47,6 +48,8 @@ const Slider = ({
     let sliderPerRow = window.innerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
     //Tính toán số lượng slide tối đa có thể di  (tổng số slide - số slide hiển thị/ row)
     let maxSlide = countChildren - sliderPerRow;
+    //Tính toán kích thước của một slide (100% / số slide hiển thị trên một hàng)
+    let gap = window.innerWidth > 768 ? configs.gap : configs.gapMobile;
 
     //giá trị trong hàm callback (active, dragX) thay đổi thì hàm callback sẽ được gọi tới để kích hoạt hàm runSlider
     useEffect(() => {
@@ -75,6 +78,7 @@ const Slider = ({
         //configs ghi đè thuộc tính của defaultConfigs width trình duyệt > 768
         sliderPerRow = window.innerWidth > 768 ? configs.sliderPerRow : configs.sliderPerRowMobile;
         maxSlide = countChildren - sliderPerRow;
+        gap = window.innerWidth > 768 ? configs.gap : configs.gapMobile;
         runSlider();
     }
 
@@ -96,7 +100,7 @@ const Slider = ({
         }
 
         // Cập nhật chiều rộng của slider container
-        ref.current.style.width = (countChildren / sliderPerRow) * 100 + '%';
+        ref.current.style.width = `calc(${(countChildren / sliderPerRow) * 100 + '%'} + ${(gap * maxSlide) / sliderPerRow + 'px'})`;
         // Tính toán và cập nhật giá trị transformX để di chuyển slider
         let transformX = active * 100 / countChildren;
         // Nếu giá trị transformX vượt quá giới hạn thì cập nhật lại giá trị transformX bằng vị trí cuối cùng
@@ -110,7 +114,9 @@ const Slider = ({
               : ", margin var(--transition-duration) cubic-bezier(0.645, 0.045, 0.355, 1) 0s"
           }`
         // Di chuyển slider bằng cách thiết lập giá trị transform
-        ref.current.style.transform = `translateX(-${transformX}%)`;
+        console.log(`translateX(-calc(${transformX}% + ${(gap * active) / countChildren}px))`)
+        ref.current.style.transform = `translateX(calc(-${transformX}% - ${(gap * active) / countChildren}px))`;
+
 
         //nếu cho phép drag, cập nhật giá trị margin-left
         if (configs.allowDrag) {
@@ -197,9 +203,10 @@ const Slider = ({
                     className="slider-items"
                     ref={ref}
                     style={{ 
-                        width: `${(countChildren / configs.sliderPerRow) * 100}%`, 
+                        width: `var(${(countChildren / configs.sliderPerRow) * 100}% + ${(gap * maxSlide) / configs.sliderPerRow}px)`, 
                         "--transition-duration": `${configs.duration ?? 400}ms`,
-                        gap: `${configs.gap ?? 0}px`,
+                        "--slide-gap": `${configs.gap ?? 0}px`,
+                        "--slide-gap-mobile": `${configs.gapMobile ?? 0}px`,
                     }}
                 >
                     {Children.map(children, (child, index) => {

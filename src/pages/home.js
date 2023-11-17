@@ -5,13 +5,14 @@ import Slider from "../components/common/slider";
 
 const Home = () => {
     const configs = {
-        sliderPerRow: 3,
+        sliderPerRow: 4,
         sliderPerRowMobile: 2.5,
         allowDrag: true,
         duration: 400,
         auto: false,
         autoDuration: 1000,
-        gap: 20,
+        gap: 40,
+        gapMobile: 10,
     }
     const [activeIndex, setActiveIndex] = useState(0);
 

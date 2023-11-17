@@ -3,6 +3,14 @@
     //overflow: hidden;
     width: 100%;
     position: relative;
+    .slider-items {
+        gap: var(--slide-gap);
+    }
+    @media screen and (max-width: 768px) {
+        .slider-items {
+            gap: var(--slide-gap-mobile);
+        }
+    }
     .slider-control {
         width: 100%;
         //opacity: 0;
