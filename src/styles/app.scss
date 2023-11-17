@@ -23,6 +23,14 @@ $medium_text: 16px;
 $body_text: 14px;
 $small_text: 12px;
 
+.test {
+  font-family: var(--font-family);
+}
+.page {
+  background: var(--background-primary);
+  color: var(--text-primary);
+}
+
 //Typo set up
 .heading{
   font-size: $heading;

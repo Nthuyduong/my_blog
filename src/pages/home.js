@@ -5,7 +5,7 @@ import Slider from "../components/common/slider";
 
 const Home = () => {
     const configs = {
-        sliderPerRow: 4,
+        sliderPerRow: 3,
         sliderPerRowMobile: 2.5,
         allowDrag: true,
         duration: 400,
@@ -128,7 +128,16 @@ const Home = () => {
                     <div className="heading_3 mb-4">Recently Update</div>
                     <div className="">
                         <Slider
-                            configs={configs}
+                            configs={{
+                                sliderPerRow: 3,
+                                sliderPerRowMobile: 2.5,
+                                allowDrag: true,
+                                duration: 400,
+                                auto: false,
+                                autoDuration: 1000,
+                                gap: 40,
+                                gapMobile: 10,
+                            }}
                         >
                             <div className="justify-center">
                                 <div className="col-span-12 md:col-span-4">
@@ -371,51 +380,152 @@ const Home = () => {
                 </div>
                 <div className="p-100">
                     <div className="heading_3 mb-4">Reader's Favorite</div>
-                    <div className="flex relative carousel-component">
-                        <div className="absolute prev-button">
-                            <button className="my-prev-btn" onClick={prevSlide}>
-                                <img className="icon-sm" src="./img/icon/chevron-left-black.svg" alt="smile" loading="lazy"/>
-                            </button>
-                        </div>
-                        <div className="carousel-inner">
-                            {slidesData.map((slide, index) => (
-                                <div
-                                    className="my-carousel grid grid-cols-12 gap-4"
-                                    key={slide.id}
-                                    style={{ display: index === activeIndex ? "grid" : "none" }}
-                                >
-                                    {slide.items.map((item, itemIndex) => (
-                                        <div className="col-span-3" key={itemIndex}>
-                                            <Link to={ROUTER.ARTICLE}>
-                                                {/*<img*/}
-                                                {/*    src={`./img/home/article${itemIndex + 1}.jpg`}*/}
-                                                {/*    alt={`Image ${itemIndex + 1}`}*/}
-                                                {/*/>*/}
-                                                <img src={item.image} alt={`Image ${itemIndex + 1}`} />
-                                            </Link>
-                                            <div className="article-info py-1 mb-1">
-                                                <div className="flex mb-1">
-                                                    <div className="mr-auto small_text">{item.tag}</div>
-                                                    <div className="small_text">{item.time}</div>
-                                                </div>
-                                                <Link to={ROUTER.ARTICLE}>
-                                                    <div className="heading_6">{item.title}</div>
-                                                </Link>
+                    <div className="">
+                        <Slider
+                            configs={{
+                                sliderPerRow: 4,
+                                sliderPerRowMobile: 2.5,
+                                allowDrag: true,
+                                duration: 400,
+                                auto: false,
+                                autoDuration: 1000,
+                                gap: 40,
+                                gapMobile: 10,
+                            }}
+                        >
+                            <div className="justify-center">
+                                <div className="col-span-12 md:col-span-4">
+                                    <div>
+                                        <Link to={ROUTER.ARTICLE}>
+                                            <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <div className="article-info py-1 mb-1">
+                                            <div className="flex mb-1">
+                                                <div className="mr-auto small-text">Drink & Coffee</div>
+                                                <div className="small_text">November 8, 2023</div>
                                             </div>
-                                            <div className="flex">
-                                                <div className="mr-auto"><a className="text-link" href="#">Read more</a></div>
-                                                <div>Share</div>
-                                            </div>
+                                            <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
                                         </div>
-                                    ))}
+                                        <div className="flex">
+                                            <div className=""><a className="text-link" href="#">Read more</a></div>
+                                            <div className="ml-auto">Share</div>
+                                        </div>
+                                    </div>
                                 </div>
-                            ))}
-                        </div>
-                        <div className="absolute next-button">
-                            <button className="my-next-btn" onClick={nextSlide}>
-                                <img className="icon-sm" src="./img/icon/chevron-right-black.svg" alt="smile" loading="lazy"/>
-                            </button>
-                        </div>
+                            </div>
+                            <div className="justify-center">
+                                <div className="col-span-12 md:col-span-4">
+                                    <div>
+                                        <Link to={ROUTER.ARTICLE}>
+                                            <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <div className="article-info py-1 mb-1">
+                                            <div className="flex mb-1">
+                                                <div className="mr-auto small-text">Drink & Coffee</div>
+                                                <div className="small_text">November 8, 2023</div>
+                                            </div>
+                                            <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
+                                        </div>
+                                        <div className="flex">
+                                            <div className=""><a className="text-link" href="#">Read more</a></div>
+                                            <div className="ml-auto">Share</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="justify-center">
+                                <div className="col-span-12 md:col-span-4">
+                                    <div>
+                                        <Link to={ROUTER.ARTICLE}>
+                                            <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <div className="article-info py-1 mb-1">
+                                            <div className="flex mb-1">
+                                                <div className="mr-auto small-text">Drink & Coffee</div>
+                                                <div className="small_text">November 8, 2023</div>
+                                            </div>
+                                            <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
+                                        </div>
+                                        <div className="flex">
+                                            <div className=""><a className="text-link" href="#">Read more</a></div>
+                                            <div className="ml-auto">Share</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="justify-center">
+                                <div className="col-span-12 md:col-span-4">
+                                    <div>
+                                        <Link to={ROUTER.ARTICLE}>
+                                            <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <div className="article-info py-1 mb-1">
+                                            <div className="flex mb-1">
+                                                <div className="mr-auto small-text">Drink & Coffee</div>
+                                                <div className="small_text">November 8, 2023</div>
+                                            </div>
+                                            <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
+                                        </div>
+                                        <div className="flex">
+                                            <div className=""><a className="text-link" href="#">Read more</a></div>
+                                            <div className="ml-auto">Share</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="justify-center">
+                                <div className="col-span-12 md:col-span-4">
+                                    <div>
+                                        <Link to={ROUTER.ARTICLE}>
+                                            <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <div className="article-info py-1 mb-1">
+                                            <div className="flex mb-1">
+                                                <div className="mr-auto small-text">Drink & Coffee</div>
+                                                <div className="small_text">November 8, 2023</div>
+                                            </div>
+                                            <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
+                                        </div>
+                                        <div className="flex">
+                                            <div className=""><a className="text-link" href="#">Read more</a></div>
+                                            <div className="ml-auto">Share</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="justify-center">
+                                <div className="col-span-12 md:col-span-4">
+                                    <div>
+                                        <Link to={ROUTER.ARTICLE}>
+                                            <img className="w-full" src="./img/home/article.jpg" alt="smile" loading="lazy"/>
+                                        </Link>
+                                    </div>
+                                    <div>
+                                        <div className="article-info py-1 mb-1">
+                                            <div className="flex mb-1">
+                                                <div className="mr-auto small-text">Drink & Coffee</div>
+                                                <div className="small_text">November 8, 2023</div>
+                                            </div>
+                                            <div className="heading_5">Top 5 beautiful Coffee Shop in HaNoi</div>
+                                        </div>
+                                        <div className="flex">
+                                            <div className=""><a className="text-link" href="#">Read more</a></div>
+                                            <div className="ml-auto">Share</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Slider>
                     </div>
 
                     {/*<div className="grid grid-cols-12 gap-4 recently-update-blog">*/}

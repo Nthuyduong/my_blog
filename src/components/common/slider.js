@@ -84,7 +84,6 @@ const Slider = ({
 
     //hàm run slider
     const runSlider = () => {
-        console.log('run slider');
 
         // cập nhật trạng thái disableNext và Prev
         setDisableNext(false);
@@ -114,7 +113,6 @@ const Slider = ({
               : ", margin var(--transition-duration) cubic-bezier(0.645, 0.045, 0.355, 1) 0s"
           }`
         // Di chuyển slider bằng cách thiết lập giá trị transform
-        console.log(`translateX(-calc(${transformX}% + ${(gap * active) / countChildren}px))`)
         ref.current.style.transform = `translateX(calc(-${transformX}% - ${(gap * active) / countChildren}px))`;
 
 

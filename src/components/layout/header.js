@@ -3,8 +3,15 @@ import {ROUTER} from "../../utils/constants";
 import { useHistory, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
+import { getLanguage, getTheme, setTheme } from "../../utils/local-store";
+import { changeLanguage } from "../../lang/index";
 
 const Header = () => {
+
+    const { t } = useTranslation();
+
     // Test for button search
     const [showw, setShoww] = useState(false);
 
@@ -27,6 +34,11 @@ const Header = () => {
             window.removeEventListener('scroll', controlNavbar)
         }
     }, [])
+
+    const handleSetTheme = (theme) => {
+        setTheme(theme);
+        window.location.reload();
+    }
     return(
         <div>
             {/*search popdown*/}
@@ -87,10 +99,10 @@ const Header = () => {
                                     <div className="flex space-x-4">
                                         {/*Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white"*/}
                                         <div className="bg-gray-900 rounded-md pr-3 py-4">
-                                            <Link to={ROUTER.HOME} className="nav-link">HOME</Link>
+                                            <Link to={ROUTER.HOME} className="nav-link">{t('header.home')}</Link>
                                         </div>
                                         <div className="text-gray-300 hover:text-gray rounded-md pr-3 py-4">
-                                            <Link to={ROUTER.ABOUT} className="nav-link">ABOUT US</Link>
+                                            <Link to={ROUTER.ABOUT} className="nav-link">{t('header.home')}</Link>
                                         </div>
                                         <div className="relative destination-navdrop">
                                             <div className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-3 py-4">
@@ -131,6 +143,34 @@ const Header = () => {
                             </div>
                             <div className="absolute inset-y-0 right-0 flex items-center sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                 <div className="flex">
+                                    <div className="flex px-2 gap-2 items-center">
+                                        <div 
+                                            className={`cursor-pointer ${getLanguage() == 'en' ? 'font-bold' : ''}`}
+                                            onClick={() => changeLanguage('en')}
+                                        >
+                                            en
+                                        </div>
+                                        <div 
+                                            className={`cursor-pointer ${getLanguage() == 'vn' ? 'font-bold' : ''}`}
+                                            onClick={() => changeLanguage('vn')}
+                                        >
+                                            vn
+                                        </div>
+                                    </div>
+                                    <div className="flex px-2 gap-2 items-center">
+                                        <div 
+                                            className={`cursor-pointer ${getTheme() == 'light' ? 'font-bold' : ''}`}
+                                            onClick={() => handleSetTheme('light')}
+                                        >
+                                            light
+                                        </div>
+                                        <div 
+                                            className={`cursor-pointer ${getTheme() == 'dark' ? 'font-bold': ''}`}
+                                            onClick={() => handleSetTheme('dark')}
+                                        >
+                                            dark
+                                        </div>
+                                    </div>
                                     <div>
                                         <button type="button"
                                                 onClick={toggleVisibility}

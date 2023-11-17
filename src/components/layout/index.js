@@ -4,6 +4,8 @@ import Footer from "./footer";
 import {ROUTER} from "../../utils/constants";
 import {useLocation} from "react-router-dom";
 import Sidebar from "./sidebar";
+import { getLanguage, getTheme } from "../../utils/local-store";
+
 
 const Layout = ({ children }) => {
 
@@ -63,9 +65,19 @@ const Layout = ({ children }) => {
     }
 
     return(
-        <div className="page">
+        // Ví dụ về cách sử dụng biến css trong trường hợp thay đổi font-family theo ngôn ngữ
+        // có thể áp dụng cách này cho trường hợp muốn làm chức năng theme dark/light
+        // theme dark/light color: --primary, --secondary, --tertiary, --white, --black
+        <div 
+            className="page"
+            style={{
+                "--font-family": getLanguage() == 'vn' ? 'serif' : '',
+                "--text-primary": getTheme() == 'light' ? 'black' : 'white',
+                "--background-primary": getTheme() == 'light' ? 'white' : 'black',
+            }}
+        >
             <Header />
-            <div className={`page-body-wrapper`}>
+            <div className={`page-body-wrapper test`}>
                 {children}
             </div>
             <Footer />
