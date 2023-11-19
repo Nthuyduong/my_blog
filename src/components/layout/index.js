@@ -5,9 +5,14 @@ import {ROUTER} from "../../utils/constants";
 import {useLocation} from "react-router-dom";
 import Sidebar from "./sidebar";
 import { getLanguage, getTheme } from "../../utils/local-store";
+import Modals from "../modal";
 
+import { useDispatch } from "react-redux";
+import { showModalLoading } from "../../store/modal/modal.action";
 
 const Layout = ({ children }) => {
+    // khai báo dispatch để sử dụng action cho store modal
+    const dispatch = useDispatch();
 
     //Back-to-top function
     const scrollToTop = () => {
@@ -51,6 +56,11 @@ const Layout = ({ children }) => {
         adminWrap();
     }, [pathname]);
 
+    const handleLoading = () => {
+        // gọi action show modal loading
+        dispatch(showModalLoading())
+    }
+
     //hide header and footer from page layout
     if (discardElement.some((route) => pathname.includes(route))) {
         return (
@@ -58,8 +68,12 @@ const Layout = ({ children }) => {
                 <Sidebar/>
                 {/*<div className={`page-body-wrapper ${show && 'admin-wrapper'}`}>*/}
                 <div className={`page-body-wrapper admin-wrapper`}>
+                    <button onClick={handleLoading}>
+                        show loading
+                    </button>
                     {children}
                 </div>
+                <Modals/>
             </div>
         );
     }
@@ -84,6 +98,7 @@ const Layout = ({ children }) => {
             <div className={`back-to-top ${appear && 'back-show'}`} onClick={() => { scrollToTop() }}>
                 <img className="icon-sm" src="/img/icon/chevron-up-black.svg" alt="smile" loading="lazy"/>
             </div>
+            <Modals/>
         </div>
     )
 }

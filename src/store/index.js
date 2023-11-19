@@ -1,0 +1,18 @@
+import { configureStore } from '@reduxjs/toolkit';
+
+import modalReducer from './modal';
+
+// khai báo các reducer trong store
+// Những cái data chung như modal, alert, , ... thì nên tạo reducer riêng
+// Những cái lấy dữ liệu từ backend về thì nên phải có reducer user, product, category, ...
+const reducer = {
+    modal: modalReducer,
+    // user: userReducer,
+};
+
+// khởi tạo store, để xử dụng cho middleware redux
+const store = configureStore({
+    reducer,
+});
+
+export default store;

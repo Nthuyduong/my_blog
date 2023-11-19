@@ -285,7 +285,14 @@ const Home = () => {
                             <div className="self-center flex ml-auto">
                                 <a href="">View all</a>
                                 <div className="ml-1">
-                                    <img className="icon-ssm" src="./img/icon/arrow-right-black.svg" alt="#" loading="lazy"/>
+                                    <img 
+                                        className="icon-ssm" 
+                                        src="./img/icon/arrow-right-black.svg" 
+                                        alt="#" 
+                                        loading="lazy"
+                                        height={100}
+                                        width={100}
+                                    />
                                 </div>
                             </div>
                         </div>
