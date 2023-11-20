@@ -4,6 +4,7 @@ const admin_postpage = () => {
     return(
         <div>
             <div className="">
+                <div className="heading">POST PAGE</div>
                 {/*POST TABLE*/}
                 <div className="admin-tbl">
                     <div className="flex tbl-row admin-tbl-title">

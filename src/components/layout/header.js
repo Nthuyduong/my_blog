@@ -102,7 +102,7 @@ const Header = () => {
                                             <Link to={ROUTER.HOME} className="nav-link">{t('header.home')}</Link>
                                         </div>
                                         <div className="text-gray-300 hover:text-gray rounded-md pr-3 py-4">
-                                            <Link to={ROUTER.ABOUT} className="nav-link">{t('header.home')}</Link>
+                                            <Link to={ROUTER.ABOUT} className="nav-link">{t('header.about')}</Link>
                                         </div>
                                         <div className="relative destination-navdrop">
                                             <div className="navdrop-title z-50 text-gray-300 hover:text-gray rounded-md pr-3 py-4">

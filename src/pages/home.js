@@ -287,11 +287,7 @@ const Home = () => {
                                 <div className="ml-1">
                                     <img 
                                         className="icon-ssm" 
-                                        src="./img/icon/arrow-right-black.svg" 
-                                        alt="#" 
-                                        loading="lazy"
-                                        height={100}
-                                        width={100}
+                                        src="./img/icon/arrow-right-black.svg"
                                     />
                                 </div>
                             </div>
@@ -301,7 +297,13 @@ const Home = () => {
                     <div className="grid grid-cols-4 gap-4">
                         <div className="col-span-4 md:col-span-2 h-popular-des-ct">
                             <div className="des-ct-img overflow-hidden">
-                                <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
+                                <img
+                                    className="w-full"
+                                    src="./img/home/category1.jpg"
+                                    alt="smile"
+                                    loading="lazy"
+                                    height={100}
+                                    width={100}/>
                             </div>
                             <div className="category-des-content">
                                 <div className="heading_4 top-destination-title py-3">Drink & Coffee</div>
@@ -322,7 +324,14 @@ const Home = () => {
                         </div>
                         <div className="col-span-4 md:col-span-2 h-popular-des-ct">
                             <div className="des-ct-img overflow-hidden">
-                                <img className="w-full" src="./img/home/category.jpg" alt="smile" loading="lazy"/>
+                                <img
+                                    className="w-full"
+                                    src="./img/home/category.jpg"
+                                    alt="smile"
+                                    loading="lazy"
+                                    height={100}
+                                    width={100}
+                                />
                             </div>
                             <div className="category-des-content">
                                 <div className="heading_4 top-destination-title py-3">Drink & Coffee</div>

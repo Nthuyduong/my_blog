@@ -27,7 +27,7 @@ $small_text: 12px;
   font-family: var(--font-family);
 }
 .page {
-  background: var(--background-primary);
+  background: v.$bg_color;
   color: var(--text-primary);
 }
 
@@ -80,7 +80,6 @@ $small_text: 12px;
   line-height: $small_text*1.5;
 }
 //Button
-
 .my-out-line-btn{
   border: 1px solid v.$primary_color;
   padding: 8px 32px;
@@ -150,7 +149,6 @@ textarea:focus-visible{
 body{
   font-family: 'Karla', sans-serif;
   color: v.$text_color;
-  background: v.$bg_color;
   font-size: 14px;
   line-height: 1.5;
 }
