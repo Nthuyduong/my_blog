@@ -11,5 +11,5 @@ export const ROUTER = {
     ADDASHBOARD: '/admin/dashboard',
     ADPOST: '/admin/post',
     ADCATEGORY: '/admin/category',
-    ADLOGIN: '/admin',
+    ADLOGIN: '/admin/login',
 }

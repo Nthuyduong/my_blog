@@ -4,7 +4,53 @@ const Adminpostpage = () => {
     return(
         <div>
             <div className="">
-                <div className="heading mb-6">Post Page</div>
+                <div className="heading_1 mb-6">Post Page</div>
+                <div className="grid grid-cols-5 gap-4">
+                    <div className="col-span-3"></div>
+                    <div className="col-span-1">
+                        <button className="my-btn-pr w-full">Create new post</button>
+                    </div>
+                    <div className="col-span-1">
+                        <button className="my-btn-pr w-full">Delete post</button>
+                    </div>
+                </div>
+                <div className="my-line my-4"></div>
+                <div className="grid grid-cols-5 gap-4 items-end mb-5">
+                    <div className="col-span-1">
+                        <div className="search-bar-box flex">
+                            <input name="findOrder" id="findOrder" className="search-input w-100" type="text"
+                                   placeholder="Enter name/id post..."/>
+                        </div>
+                    </div>
+                    <div className="col-span-1">
+                        <select className="sl-box">
+                            <option value="" selected hidden>Status</option>
+                            <option value="">Published</option>
+                            <option value="">Draft</option>
+                            <option value="">New</option>
+                        </select>
+                    </div>
+                    <div className="col-span-1">
+                        <select className="sl-box">
+                            <option value="" selected hidden>Category</option>
+                            <option value="">Drink & Coffee</option>
+                            <option value="">Food & Cake</option>
+                            <option value="">Photo Spots</option>
+                        </select>
+                    </div>
+                    <div className="col-span-1">
+                        <div className="flex flex-col">
+                            <label>Start date</label>
+                            <input className="sort-date" type="text"/>
+                        </div>
+                    </div>
+                    <div className="col-span-1">
+                        <div className="flex flex-col">
+                            <label>End date</label>
+                            <input className="sort-date" type="text"/>
+                        </div>
+                    </div>
+                </div>
                 {/*POST TABLE*/}
                 <div className="admin-tbl">
                     <div className="flex tbl-row admin-tbl-title">

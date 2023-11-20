@@ -71,7 +71,8 @@
 .stt4{
   background-color: #F0905A;
 }
-.sl-box{
+.sl-box, .search-bar-box{
+  border: 1px solid v.$border2_color;
   padding:8px;
   width: 100%;
 }
@@ -91,4 +92,13 @@
 }
 .admin-inpu:focus-visible{
   outline: none;
+}
+.sort-date{
+  min-height: 36.5px;
+  border: 1px solid v.$border2_color;
+}
+.my-line{
+  background: v.$border2_color;
+  height: 1px;
+  width: 100%;
 }
