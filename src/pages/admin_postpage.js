@@ -1,10 +1,10 @@
 import React from "react";
 
-const admin_postpage = () => {
+const Adminpostpage = () => {
     return(
         <div>
             <div className="">
-                <div className="heading">POST PAGE</div>
+                <div className="heading mb-6">Post Page</div>
                 {/*POST TABLE*/}
                 <div className="admin-tbl">
                     <div className="flex tbl-row admin-tbl-title">
@@ -79,4 +79,4 @@ const admin_postpage = () => {
         </div>
     )
 }
-export default admin_postpage;
+export default Adminpostpage;

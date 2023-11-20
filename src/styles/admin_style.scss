@@ -75,3 +75,20 @@
   padding:8px;
   width: 100%;
 }
+//TABS STYLE
+.tabs-container{
+  .my-tabs{
+    border-bottom: 1px solid #ccc;
+    min-width: 200px;
+  }
+  .my-tabs.active{
+    border-bottom: 1px solid #333;
+  }
+}
+//imput style
+.admin-inpu{
+  border-bottom: 1px solid #ccc;
+}
+.admin-inpu:focus-visible{
+  outline: none;
+}

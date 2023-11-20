@@ -1,8 +1,8 @@
 import React from "react";
 
-const admin_category = () => {
+const Admincategory = () => {
     return(
         <div></div>
     )
 }
-export default admin_category;
+export default Admincategory;
