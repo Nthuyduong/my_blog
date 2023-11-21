@@ -3,7 +3,7 @@ import React from "react";
 const Adminpostpage = () => {
     return(
         <div>
-            <div className="">
+            <div className="post-page">
                 <div className="heading_1 mb-6">Post Page</div>
                 <div className="grid grid-cols-5 gap-4">
                     <div className="col-span-3"></div>
@@ -41,13 +41,13 @@ const Adminpostpage = () => {
                     <div className="col-span-1">
                         <div className="flex flex-col">
                             <label>Start date</label>
-                            <input className="sort-date" type="text"/>
+                            <input className="sort-date" type="datetime-local" placeholder="dd/mm/yyyy"/>
                         </div>
                     </div>
                     <div className="col-span-1">
                         <div className="flex flex-col">
                             <label>End date</label>
-                            <input className="sort-date" type="text"/>
+                            <input className="sort-date" type="datetime-local" placeholder="dd/mm/yyyy"/>
                         </div>
                     </div>
                 </div>

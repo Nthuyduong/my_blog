@@ -23,6 +23,12 @@ $medium_text: 16px;
 $body_text: 14px;
 $small_text: 12px;
 
+body{
+  min-height: 100vh;
+}
+.page{
+  min-height: 100vh;
+}
 .test {
   font-family: var(--font-family);
 }
