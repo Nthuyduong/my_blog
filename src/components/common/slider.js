@@ -170,7 +170,7 @@ const Slider = ({
             if (
                 Math.abs(draxTemp) > window.innerWidth * 0.1
             ) {
-                let step = Math.round(Math.abs(draxTemp) / refWrp.current.offsetWidth * configs.sliderPerRow);
+                let step = Math.round(Math.abs(draxTemp) / refWrp.current.offsetWidth * sliderPerRow);
 
                 if (draxTemp > 0) {
                     changeSlide(active - (step));
