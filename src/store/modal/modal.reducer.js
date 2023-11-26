@@ -17,15 +17,15 @@ const reducer = {
     },
 
 
-    SHOW_MODAL_LOADING: (state, {}) => {
-        state.modalLoading.show = true;
-    },
-    HIDE_MODAL_LOADING: (state, {}) => {
-        state.modalLoading.show = false;
-    },
-    SET_MODAL_LOADING_CALLBACK: (state, { payload }) => {
-        state.modalLoading.callback = payload;
-    },
+    // SHOW_MODAL_LOADING: (state, {}) => {
+    //     state.modalLoading.show = true;
+    // },
+    // HIDE_MODAL_LOADING: (state, {}) => {
+    //     state.modalLoading.show = false;
+    // },
+    // SET_MODAL_LOADING_CALLBACK: (state, { payload }) => {
+    //     state.modalLoading.callback = payload;
+    // },
 }
 
 export default reducer;

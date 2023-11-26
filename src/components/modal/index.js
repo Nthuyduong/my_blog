@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { hideModal } from "../../store/modal/modal.action";
 
 import ModalLoading from "./loading";
+import ModalCategory from "./category";
 
 import { useClickOutside } from "../../hooks/dom";
 
@@ -21,6 +22,8 @@ const Modals = () => {
 
     const getModal = () => {
         switch (name) {
+            case "category":
+                return <ModalCategory/>
             case "loading":
                 return <ModalLoading data={data} />;
             default:

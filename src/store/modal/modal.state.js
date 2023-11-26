@@ -15,6 +15,10 @@ const state = {
         enableClickOutside: true,
     },
 
+    modalCategory: {
+        show: false,
+        callback: null
+    },
     // giá trị mặc định của modal loading ban đầu là false, 
     //  show loading thì sẽ chuyển thành true
     modalLoading: {
