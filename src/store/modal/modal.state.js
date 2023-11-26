@@ -6,10 +6,20 @@
 // muốn lấy giá trị của state thì dùng useSelector hook của react-redux
 // muốn update thì dùng reducer tương ứng của state đó
 const state = {
+    
+    modal: {
+        show: false,
+        name: null,
+        data: null,
+        invisibleBackground: true,
+        enableClickOutside: true,
+    },
+
     // giá trị mặc định của modal loading ban đầu là false, 
     //  show loading thì sẽ chuyển thành true
     modalLoading: {
         show: false,
+        callback: null,
     },
     modalConfirm: {
         // kiểu dữ liệu bình js

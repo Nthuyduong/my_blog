@@ -8,7 +8,7 @@ import { getLanguage, getTheme } from "../../utils/local-store";
 import Modals from "../modal";
 
 import { useDispatch } from "react-redux";
-import { showModalLoading } from "../../store/modal/modal.action";
+import { showModal } from "../../store/modal/modal.action";
 
 const Layout = ({ children }) => {
     // khai báo dispatch để sử dụng action cho store modal
@@ -58,7 +58,14 @@ const Layout = ({ children }) => {
 
     const handleLoading = () => {
         // gọi action show modal loading
-        dispatch(showModalLoading())
+        dispatch(showModal({
+            name: "loading",
+            data: {
+                message: "Đang tải dữ liệu",
+            },
+            invisibleBackground: true,
+            enableClickOutside: false,
+        }))
     }
 
     //hide header and footer from page layout
