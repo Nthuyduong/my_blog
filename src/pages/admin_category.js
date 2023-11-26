@@ -1,6 +1,16 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {showCategory} from "../store/newcategory/category.action";
+import ModalCategory from "../components/modal/category";
 
 const Admincategory = () => {
+
+    const dispatch = useDispatch();
+
+    const handleCategory = () => {
+        dispatch(showCategory())
+    }
+
     return(
         <div>
             <div className="category-page">
@@ -21,7 +31,8 @@ const Admincategory = () => {
                         </select>
                     </div>
                     <div className="col-span-1">
-                        <button className="my-btn-pr w-full">New Category</button>
+                        <button onClick={handleCategory} className="my-btn-pr w-full">New Category</button>
+                        <ModalCategory/>
                     </div>
                     <div className="col-span-1">
                         <button className="my-btn-pr w-full">Delete category</button>

@@ -7,6 +7,7 @@ import modalReducer from './modal';
 // Những cái lấy dữ liệu từ backend về thì nên phải có reducer user, product, category, ...
 const reducer = {
     modal: modalReducer,
+    // category: categoryReducer,
     // user: userReducer,
 };
 

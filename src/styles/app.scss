@@ -32,9 +32,9 @@ body{
 .test {
   font-family: var(--font-family);
 }
-.page {
-  background: v.$bg_color;
-  color: var(--text-primary);
+root {
+  background: v.$bgcolor;
+  color: #000;
 }
 
 //Typo set up
