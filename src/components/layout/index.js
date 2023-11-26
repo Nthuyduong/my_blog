@@ -56,17 +56,17 @@ const Layout = ({ children }) => {
         adminWrap();
     }, [pathname]);
 
-    const handleLoading = () => {
-        // gọi action show modal loading
-        dispatch(showModal({
-            name: "loading",
-            data: {
-                message: "Đang tải dữ liệu",
-            },
-            invisibleBackground: true,
-            enableClickOutside: false,
-        }))
-    }
+    // const handleLoading = () => {
+    //     // gọi action show modal loading
+    //     dispatch(showModal({
+    //         name: "loading",
+    //         data: {
+    //             message: "Đang tải dữ liệu",
+    //         },
+    //         invisibleBackground: true,
+    //         enableClickOutside: false,
+    //     }))
+    // }
 
     //hide header and footer from page layout
     if (discardElement.some((route) => pathname.includes(route))) {
@@ -75,9 +75,9 @@ const Layout = ({ children }) => {
                 <Sidebar/>
                 {/*<div className={`page-body-wrapper ${show && 'admin-wrapper'}`}>*/}
                 <div className={`page-body-wrapper admin-wrapper`}>
-                    <button onClick={handleLoading}>
-                        show loading
-                    </button>
+                    {/*<button onClick={handleLoading}>*/}
+                    {/*    show loading*/}
+                    {/*</button>*/}
                     {children}
                 </div>
                 <Modals/>

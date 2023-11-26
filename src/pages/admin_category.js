@@ -2,13 +2,18 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import {showCategory} from "../store/newcategory/category.action";
 import ModalCategory from "../components/modal/category";
+import {showModal} from "../store/modal/modal.action";
 
 const Admincategory = () => {
 
     const dispatch = useDispatch();
 
-    const handleCategory = () => {
-        dispatch(showCategory())
+    const handleAddCategory = () => {
+        // gọi action show modal loading
+        dispatch(showModal({
+            name: "category",
+            enableClickOutside: true,
+        }))
     }
 
     return(
@@ -31,8 +36,7 @@ const Admincategory = () => {
                         </select>
                     </div>
                     <div className="col-span-1">
-                        <button onClick={handleCategory} className="my-btn-pr w-full">New Category</button>
-                        <ModalCategory/>
+                        <button onClick={handleAddCategory} className="my-btn-pr w-full">New Category</button>
                     </div>
                     <div className="col-span-1">
                         <button className="my-btn-pr w-full">Delete category</button>
