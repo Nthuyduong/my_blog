@@ -36,7 +36,6 @@ const Modals = () => {
     if (!show) {
         return <></>;
     }
-    
 
     return (
         <div className="modal-backdrop">
